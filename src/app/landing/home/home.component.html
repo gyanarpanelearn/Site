@@ -1,0 +1,313 @@
+<app-navbar></app-navbar>
+
+<main id="home">
+  <div class="position-relative">
+    <div class="demo-header demo-header-image">
+
+      <div class="motto text-left" style="margin-left: 0px;">
+        <h1 *ngIf="!scrEEn"
+          style="font-weight: 420;color: #fff;text-align: left;font-size: 2.6em;margin-left: 9%;margin-top: 145px;"><b>
+            <span *ngIf="!scrEEn">&nbsp;&nbsp;&nbsp;&nbsp;</span> Learn at your own pace </b></h1>
+
+        <h1 *ngIf="scrEEn"
+          style="font-weight: 420;color: #fff;text-align: left;font-size: 2.0em;margin-left: 10px;margin-top: 10px;"><b
+            style="color: #126f9a;"> Learn at your own pace </b></h1>
+
+
+        <div *ngIf="!scrEEn">
+          <h3 class="text-left"
+            style="margin-top: -12px; font-weight: 500;color: #fff;text-align: left;font-size: 22px; margin-left: 9%;">
+            <span style="color: #fff;"> <span *ngIf="!scrEEn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              Anytime, Anywhere, at your own schedule. </span>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button  [routerLink]="['/salesforce-admin']" type="button" style="background: #126f9a;"
+              class="btn btn-primary btn-lg">View
+              Course</button>
+
+          </h3>
+          <br><br><br><br><br><br><br>
+        </div>
+
+        <h3 *ngIf="scrEEn" class="text-left"
+          style="margin-top: -12px; font-weight: 500;color: #fff;text-align: left;font-size: 20px; margin-left: 10px;">
+          <span style="color: #126f9a;"> Anytime, Anywhere, at your own schedule. </span>
+          <br>
+          <button type="button" class="btn btn-primary "  [routerLink]="['/salesforce-admin']" style="background: #126f9a;">View Course</button>
+
+        </h3>
+
+
+        <div class="col-md-6" style="margin-left: -150px;margin-top: 20px;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br *ngIf="!scrEEn"><br>
+  <!-- <h2 class="txt txtHeader border-bottom col-md-2 ml-auto mr-auto" ><b> HOW IT WORKS! </b></h2><br> -->
+  <app-howitworks></app-howitworks>
+
+  <app-howdiff></app-howdiff> <br>
+
+  <div style="background-color: #F9F9F9;">
+    <app-programs></app-programs>
+  </div>
+
+  <br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+  <app-pinclude></app-pinclude>
+  <app-startnow></app-startnow>
+
+
+  <ng-template #classic4 let-c="close" let-d="dismiss">
+    <div class="modal-content">
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span style="font-size: 40px;color: red;" class="pull-right" aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body p-0">
+        <div class="card bg-secondary shadow border-0">
+          <div class="card-body px-lg-5 py-lg-5">
+            <div class="text-center text-muted mb-4">
+              <small> ENQUIRE </small>
+            </div>
+            <form role="form">
+
+              <div class="form-group mb-3">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="First Name" type="text"
+                    style="border-right: 1px solid grey;">
+
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class=""></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Last Name" type="text">
+
+                </div>
+
+              </div>
+
+
+              <div class="form-group mb-3">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Phone No." type="number">
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Email" type="email">
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-building"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="College Name" type="text">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="font-weight: bold;">Year : </span>
+                  </div>
+                  <select class="form-control">
+                    <option value="1">1 st</option>
+                    <option value="2">2 nd</option>
+                    <option value="3">3 rd</option>
+                    <option value="4">4 th</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="font-weight: bold;">Project Type : </span>
+                  </div>
+                  <select class="form-control">
+                    <option value="1">Mini</option>
+                    <option value="2">Major</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="font-weight: bold;">Degree : </span>
+                  </div>
+                  <select class="form-control">
+                    <option value="1">Engineering</option>
+                    <option value="2">BSC</option>
+                    <option value="3">BCS</option>
+                    <option value="4">MSC</option>
+                    <option value="4">MCA</option>
+                  </select>
+                </div>
+              </div>
+
+
+
+              <div class="text-center">
+                <button type="button" class="btn  btn-txt my-4" style="border-radius: 16px">SUBMIT</button>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <br><br>
+  <!--  -->
+  <nav style="margin: 0px;margin-bottom: -40px;background-color: #F9F9F9;">
+
+    <br><br>
+    <div class="col-md-12  ">
+      <h2 class="mr-auto ml-auto text-center txtHeader"> <span class="border-bottom">
+          &nbsp; OUR STUDENTS RECRUITED AT &nbsp;</span> </h2><br><br><br>
+      <!-- <button type="button" class="btn btn-secondary">Enquire Now</button> -->
+      <!-- <br> -->
+    </div>
+    <!-- <div class="col-lg-2" ></div> -->
+    <div class="row col-lg-12" style="padding: 50px; background-color: #126f9a;margin-left: 1px;">
+      <!-- <marquee> -->
+      <div *ngIf="!scrEEn" class="col-lg-3  ">
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/sponsors%2F010101.jpg?alt=media&token=4ef59363-867b-4d07-a78b-02697f174751"
+          height="120px" width="auto">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/sponsors%2F010102.jpg?alt=media&token=b9d0e9dd-fdbe-4a43-b7ab-0b7f58969b40"
+          height="40px" width="auto">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </div>
+      <div *ngIf="!scrEEn" class="col-lg-3  ">
+
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010103.webp?alt=media&token=299ad699-f1bf-4008-8440-3351df5f3534"
+          height="110px" width="auto"> &nbsp;&nbsp;&nbsp;
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010104.webp?alt=media&token=b7d738f5-f4ef-4db7-b450-6d6cae6e5494"
+          height="90px" width="auto">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </div>
+
+      <br *ngIf="!scrEEn">
+      <div *ngIf="!scrEEn" class="col-lg-3  ">
+
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010105.webp?alt=media&token=db5e0dfb-c322-421d-b996-8aa4d542cfac"
+          height="50px" style="margin-bottom: 50px;" width="auto">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <img src="../../assets/img/sponsors/010106.webp" height="50px" width="auto">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/sponsors%2F010108.jpg?alt=media&token=183877bb-eaa5-41cf-991e-9396a8bdd520"
+          height="70px" width="auto">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </div>
+      <div *ngIf="!scrEEn" class="col-lg-3  ">
+
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010107.webp?alt=media&token=3701760e-2155-4b63-bcc2-9763980c5654"
+          height="80px" width="auto">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </div>
+
+      <div *ngIf="scrEEn" class="text-center">
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/sponsors%2F010101.jpg?alt=media&token=4ef59363-867b-4d07-a78b-02697f174751"
+          height="120px" width="auto"> <br>
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/sponsors%2F010102.jpg?alt=media&token=b9d0e9dd-fdbe-4a43-b7ab-0b7f58969b40"
+          height="40px" width="auto"> <br>
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010103.webp?alt=media&token=299ad699-f1bf-4008-8440-3351df5f3534"
+          height="110px" width="auto"> <br>
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010104.webp?alt=media&token=b7d738f5-f4ef-4db7-b450-6d6cae6e5494"
+          height="90px" width="auto"> <br>
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010105.webp?alt=media&token=db5e0dfb-c322-421d-b996-8aa4d542cfac"
+          height="50px" width="auto"> <br>
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/sponsors%2F010108.jpg?alt=media&token=183877bb-eaa5-41cf-991e-9396a8bdd520"
+          height="70px" width="auto"> <br>
+        <img alt="icon"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed2%2F010107.webp?alt=media&token=3701760e-2155-4b63-bcc2-9763980c5654"
+          height="80px" width="auto"> <br>
+      </div>
+
+      <br><br>
+
+
+    </div>
+
+
+  </nav>
+
+  <!-- <app-placed-s></app-placed-s> -->
+
+  <app-team></app-team>
+  <br><br><br>
+  <app-contactus></app-contactus>
+
+</main>
+
+<!-- <app-placed-pop></app-placed-pop> -->
+
+<div *ngIf="!scrEEn && show" class="sfooter bg-secondary containerz" style="padding-top: 0px;color:#126f9a;">
+
+
+  <div *ngIf="show" class="sale-preheader pt-10 pb-10" id="sale-preheader" style="padding: 0px;margin: 0%;">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center text-center mr-10 ml-10 mr-0-lg ml-0-lg">
+        <div class="d-flex justify-content-center align-items-center ">
+          <div class="bottom-banner-triangle-right"></div>
+          <div class="countdown" data-ends-on="2019-12-18 09:00:00">
+            <div class="d-flex flex-row ">
+              <i class="ni ni-bold-right" style="color: #126f9a;margin-top: 11px;font-size: 36px;"></i>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="cd2">
+                <!-- <countdown class="cd1" (reached)="callback($event)" [text]="home"
+                  units="Days | Hours | Minutes | Seconds" end="February 17, 2021"></countdown> -->
+              </div>
+              <i class="ni ni-bold-left" style="color: #126f9a;margin-top: 11px;font-size: 36px;"></i>
+            </div>
+          </div>
+          <div class="bottom-banner-triangle-left"></div>
+        </div>
+        <div *ngIf="!scrEEn" class="mr-20 ml-20 ml-50-lg mr-50-lg"><span
+            class="fw-600 m-0  main-text-banner text-uppercase" style="font-size: 20px;">New internship batch starts
+            from 17<sup>th</sup> Feb</span><br>
+
+        </div> &nbsp;&nbsp;&nbsp; <a *ngIf="!scrEEn" [routerLink]="['/inter-cdlc']"> <button
+            class="btn button btn-txt border-secondary"> SIGN UP </button> </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

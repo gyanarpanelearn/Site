@@ -1,0 +1,97 @@
+<footer class="footer bg-default eb">
+  <div style="margin-left:7%;margin-right:7%;">
+
+
+    <div class="col-lg-12" style="margin-left:0%;margin-right:0%;">
+      <div style="margin-left: 3%;">
+        <h4 class="text-white"> <b> Gyanarpan </b> </h4>
+        explore the creative U <br><br>
+      </div>
+      <hr style="border: 0.5px solid grey;margin-top: 0px;margin-bottom: 0%;margin-right: 3%;margin-left: 3%;">
+      <br>
+    </div>
+
+    <div class="row" style="margin: 0px;">
+      <div class="col-md-4">
+        <ul style="list-style-type:none;">
+          <h6 style="color: white;"><b>COURSES</b></h6>
+          <!-- <li ><a [routerLink]="['/course-fed']"> Front End Development</a></li> -->
+          <li><a [routerLink]="['/course-sforce']"> Sales-force Development </a> <sup><span class="blink_text">
+                Enrollment
+                Started</span></sup></li>
+
+          <!-- <li><a [routerLink]="['/course-bd']"> Backend Development</a></li> -->
+          <!-- <li><a [routerLink]="['/course-']"> Artificial Intelligence</a></li> -->
+          <li><a [routerLink]="['/course-ml']"> Machine Learning</a></li>
+          <!-- <li><a [routerLink]="['/course']"> Deep Learning </a></li> -->
+          <!-- <li><a [routerLink]="['/courses']"> Natural Language Processing </a></li> -->
+          <!-- <li><a> Data Structure & Algorithm</a></li> -->
+          <!-- <li><a> Core Development Life Cycle </a></li> -->
+          <li><a [routerLink]="['/course-iot']"> Internet Of Things </a></li>
+          <li><a [routerLink]="['/course-apti']"> Aptitude </a></li>
+          <!-- <li><a [routerLink]="['/test']"> Test </a></li> -->
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul style="list-style-type:none;">
+          <h6 style="color: white;"><b>SUPPORT</b></h6>
+          <li><a [routerLink]="['/contact-us']"> Contact</a></li>
+          <li><a [routerLink]="['/terms']"> Terms Of Services</a></li>
+        </ul>
+      </div>
+      <li><a [routerLink]="['/terms']"> Privacy Policy</a></li>
+
+
+      <div class="col-md-4">
+        <ul style="list-style-type:none;">
+          <h6 style="color: white;"><b>GYANARPAN</b></h6>
+          <li><a [routerLink]="['/about-us']"> About</a></li>
+          <li><a [routerLink]="['/enq']"> Career</a></li>
+          <li><a
+              [routerLink]="['/preplacement-scholarship-exam-for-computer-it-and-electronics-engineers']">Scholarship</a>
+          </li>
+          <li><a [routerLink]="['/internship-for-computer-and-it-engineers']">Internship</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr style="border: 0.5px solid grey;margin-top: 0px;margin-right: 3%;margin-left: 3%;">
+    <div class="row align-items-center justify-content-md-between"
+      style="margin-top: -30px;margin-bottom: -40px;margin-right: 3%;margin-left: 3%;">
+      <div class="col-md-6">
+        <div class="copyright">
+          &copy; {{test | date: 'yyyy'}}
+          <a href=" ">Gyanarpan</a>.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a href="http://fb.com/gyanarpanelearn" class="nav-link" target="_blank">
+              <i class="fa fa-facebook-square fa-2x text-white"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://twitter.com/gyanarpanelearn" class="nav-link" target="_blank">
+              <i class="fa fa-twitter fa-2x text-white"></i>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href=" " class="nav-link" target="_blank">Blog</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="http://linkedin.com/company/gyanarpanelearn" class="nav-link" target="_blank">
+              <i class="fa fa-linkedin-square fa-2x text-white"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank">
+              <i class="fa fa-youtube fa-2x text-white"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+</footer>

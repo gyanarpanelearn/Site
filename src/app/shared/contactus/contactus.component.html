@@ -1,0 +1,71 @@
+<div class="section section-contactus cd-section" id="contact" style="padding: 0px;border-radius: 40%;">
+  <div class="contactus-1 section-image"
+    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/bg-contact.jpg?alt=media&token=3069f8e2-3395-4bff-afc8-704c7959db4c');background-size: cover;">
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 ml-auto mr-auto">
+          <div class="card card-contact no-transition" style="border-radius: 20px;"><br>
+            <h3 class=" text-center txtHeader mr-auto ml-auto"> <span class="border-bottom"> &nbsp; CONTACT US
+                &nbsp;</span> </h3>
+            <div class="row">
+              <div class="col-md-5 ml-auto">
+                <div class="card-body">
+                  <div class="info info-horizontal">
+
+                    <div class="description ">
+                      <h4 class="info-title txtSub"><span class="icon icon-info"><i class="ni ni-pin-3"></i>
+                        </span>&nbsp;&nbsp;Find us at the office</h4>
+                      <p> Mangalya Lane No. 3 Vidisha Society, <br> Karve Nagar, Pune - 411052 </p>
+                    </div>
+                  </div>
+                  <div class="info info-horizontal">
+                    <div class="icon icon-danger"> </div>
+                    <div class="description">
+                      <h4 class="info-title txtSub"><span class="icon icon-info"><i class="fa fa-phone"></i>
+                        </span>&nbsp;&nbsp;Give us a ring</h4>
+                      <p> +91 7757994172 <br>
+                        +91 8208142041 <br>
+                        +91 8080115984<br>
+                        Email: info@gyanarpan.com <br> Mon - Fri, 8:00-22:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 mr-auto">
+                <form id="contact-form" method="post" novalidate="" role="form"
+                  class="ng-untouched ng-pristine ng-valid">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group label-floating"><label class="control-label">First name</label><input
+                            [(ngModel)]="fname" class="form-control" name="name" placeholder="First Name" type="text">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group label-floating"><label class="control-label">Last name</label><input
+                            [(ngModel)]="lname" class="form-control" name="name" placeholder="Last Name" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group label-floating"><label class="control-label">Email address</label><input
+                        [(ngModel)]="email" class="form-control" name="email" placeholder="Email" type="email"></div>
+                    <div class="form-group label-floating"><label class="control-label">Your message</label><textarea
+                        [(ngModel)]="msg" class="form-control" id="message" name="message" placeholder="Message"
+                        rows="6"></textarea></div>
+                    <div class="row">
+                      <div class="col-md-6"></div>
+                      <div class="col-md-6"><button (click)="contactus()" class="btn txtb pull-right "
+                          style="border-radius: 16px;" type="submit">Send Message</button></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+</div>

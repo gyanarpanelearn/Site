@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+
+<div class="header py-7 py-lg-8">
+  <div class="container">
+    <div class="header-body text-center mb-7">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <div class="container mt--8 pb-5 ">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-7">
+        <div class="card bg-secondary shadow border btn-secondary">
+          <div class="card-header bg-transparent pb-5">
+            <div class="text-muted text-center mt-2 mb-3">
+              <h2 class="txtHeader" style="font-weight: bold;">
+                Run Program :
+              </h2>
+            </div>
+          </div>
+          <div class="card-body px-lg-5 py-lg-5">
+
+            <div class="form-group">
+              <div class="input-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" style="font-weight: bold;"> Language : </span>
+                </div>
+                <select [(ngModel)]="lang" class="form-control">
+                  <option value="50">C</option>
+                  <option value="54">C++</option>
+                  <option value="62">JAVA</option>
+                  <option value="63">NodeJS / JavaScript</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+              Expected op:
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" [(ngModel)]="expectedop"
+                disabled></textarea>
+            </div>
+
+            <div class="form-group col-md-12">
+              Program :
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" [(ngModel)]="program"></textarea>
+            </div>
+
+            <div class="form-group col-md-12">
+              <div class="input-group input-group-alternative">
+                StdIN :
+                <input class="form-control" [(ngModel)]="stdin" placeholder="Standard Input" type="text">
+              </div>
+            </div>
+
+            <button (click)="this.pushProgram()" type="button" class="btn  btn-txt my-4 pull-right"
+              style="border-radius: 16px"> Check Program </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

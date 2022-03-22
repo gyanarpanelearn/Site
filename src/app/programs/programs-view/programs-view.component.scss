@@ -1,0 +1,53 @@
+.bk-img {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2FFormatFactorypre-p-land.jpg?alt=media&token=6d6896c3-77c6-4a5b-bdf4-a48944c272d3");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media only screen and (max-width: 900px) {
+  .bk-img {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2FFormatFactorypre-p-land.jpg?alt=media&token=6d6896c3-77c6-4a5b-bdf4-a48944c272d3");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+  }
+}
+
+.demo-header {
+  background-size: cover;
+  // background-color: #FF8F5E;
+  background-position: center top;
+  margin-top: 0px;
+  min-height: 600px;
+}
+
+@media only screen and (max-width: 700px) {
+  .demo-header {
+    background-size: cover;
+    //  background-color: #FF8F5E;
+    background-position: center top;
+    margin-top: 0px;
+    min-height: 140px;
+    // height: 100%;
+  }
+}
+.demo-header-image {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2FFormatFactorypre-p-land.jpg?alt=media&token=6d6896c3-77c6-4a5b-bdf4-a48944c272d3");
+}
+.demo-header .motto {
+  color: #ffffff;
+  padding-top: 25vh;
+  text-align: center;
+  z-index: 3;
+}
+.title-uppercase {
+  text-transform: uppercase;
+}
+
+.img2 {
+  box-shadow: 5px 5px 25px 0 rgb(100, 126, 146);
+  border-radius: 6px;
+  margin-bottom: 10px;
+}

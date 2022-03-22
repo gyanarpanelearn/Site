@@ -1,0 +1,18 @@
+
+.demo-header-image {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fbg-about.jpg?alt=media&token=a2fe3efa-88f4-4eef-ad6f-da9e81ba7b5b")    ; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+ }
+ @media only screen and (max-width: 700px) {
+    .demo-header-image {
+       background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fbg-about.jpg?alt=media&token=a2fe3efa-88f4-4eef-ad6f-da9e81ba7b5b")    ; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+        background-size: 100%;
+    background-repeat: no-repeat;
+    }
+ }

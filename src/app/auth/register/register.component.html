@@ -1,0 +1,266 @@
+<app-navbar></app-navbar>
+
+<div class="header py-7 py-lg-8">
+  <div class="container">
+    <div class="header-body text-center mb-7">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <div class="container mt--8 pb-5 ">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-7">
+        <div class="card bg-secondary shadow border btn-secondary">
+          <div class="card-header bg-transparent pb-5">
+            <div class="text-muted text-center mt-2 mb-3"><small>Sign up with</small></div>
+            <div class="btn-wrapper text-center">
+              <a *ngIf="show" href="javascript:void(0)" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon"><img alt="Insta"
+                    src="https://www.freelogovectors.net/wp-content/uploads/2016/12/Instagram_Icon.png"></span>
+                <span class="btn-inner--text">Insta</span>
+              </a>
+              <a *ngIf="show" href="javascript:void(0)" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon"><img alt="Facebook"
+                    src="https://www.freelogovectors.net/wp-content/uploads/2016/12/facebook-logo.png"></span>
+                <span class="btn-inner--text">Facebook</span>
+              </a>
+              <a (click)="googleLogin()" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon"><img alt="Google"
+                    src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/icons%2Fcommon%2Fgoogle.svg?alt=media&token=8a897cfe-3d3d-4062-93ab-9f6a91b13a6a"></span>
+                <span class="btn-inner--text">Google</span>
+              </a>
+            </div>
+          </div>
+          <div class="card-body px-lg-5 py-lg-5">
+            <div class="text-center text-muted mb-4">
+              <small>Or sign up with credentials</small><br>
+              <a [routerLink]="['/auth/login']"> <u>Have an account Sign In</u> </a>
+            </div>
+
+            <div *ngIf="show" class="form-group col-md-6">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                </div>
+                <input class="form-control" [(ngModel)]="fname" placeholder="First Name" type="text"
+                  style="border-right: 1px solid grey;">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class=""></i></span>
+                </div>
+                <input class="form-control" [(ngModel)]="lname" placeholder="Last Name" type="text">
+
+              </div>
+
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                </div>
+                <input [(ngModel)]="fname" class="form-control" placeholder="First Name" type="text"
+                  style="border-right: 1px solid grey;">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class=""></i></span>
+                </div>
+                <input [(ngModel)]="lname" class="form-control" placeholder="Last Name" type="text">
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                </div>
+                <input [(ngModel)]="dob" class="form-control" placeholder="DOB" type="text" onfocus="(this.type='date')"
+                  onblur="(this.type='text')">
+              </div>
+            </div>
+
+
+            <div class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+                </div>
+                <input [(ngModel)]="contact" class="form-control" placeholder="Mobile No." min="6000000000"
+                  max="9999999999" type="number" pattern="^[789][0-9]{9}">
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                </div>
+                <input [(ngModel)]="emailInput" class="form-control" placeholder="Email" type="email">
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-building"></i></span>
+                </div>
+                <input [(ngModel)]="collegeName" class="form-control" placeholder="College Name" type="text">
+              </div>
+            </div>
+
+            <div *ngIf="show" class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-building"></i></span>
+                </div>
+                <input [(ngModel)]="collegeName" class="form-control" placeholder="Branch" type="text">
+              </div>
+            </div>
+
+            <div *ngIf="show" class="form-group mb-3">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-building"></i></span>
+                </div>
+                <input [(ngModel)]="collegeName" class="form-control" placeholder="Current Semester" type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" style="font-weight: bold;">Branch : </span>
+                </div>
+                <select [(ngModel)]="branch" class="form-control">
+                  <option value="CSE">CSE</option>
+                  <option value="IT">IT</option>
+                  <option value="Electronics">Electronics</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" style="font-weight: bold;">Degree : </span>
+                </div>
+                <select [(ngModel)]="degree" class="form-control">
+                  <option value="BE">BE</option>
+                  <option value="BSC">BSC</option>
+                  <option value="BCA">BCA</option>
+                  <option value="MSC">MSC</option>
+                  <option value="MCA">MCA</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" style="font-weight: bold;">Interested In : </span>
+                </div>
+                <select [(ngModel)]="intIn" class="form-control">
+                  <option value="INTERNSHIP">INTERNSHIP</option>
+                  <option value="PREPLACEMENT">PREPLACEMENT</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-diamond"></i></span>
+                </div>
+                <input [(ngModel)]="refCode" class="form-control" placeholder="Referral Code" type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                </div>
+                <input [(ngModel)]="passwordInput" class="form-control" placeholder="Password" type="password">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                </div>
+                <input [(ngModel)]="cpasswordInput" class="form-control" placeholder="Confirm Password" type="password">
+              </div>
+            </div>
+
+            <div *ngIf="cpasswordInput != '' && passwordInput != '' && cpasswordInput != passwordInput"
+              class="alert alert-danger" role="alert">
+              Password's dont match
+            </div>
+
+            <recaptcha [formControl]="myRecaptcha" (scriptLoad)="onScriptLoad()" (scriptError)="onScriptError()">
+            </recaptcha>
+
+
+            <div *ngIf="show" class="form-group">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" style="font-weight: bold;">Interested In : </span>
+                </div>
+                <select [(ngModel)]="intIn" class="form-control">
+                  <option value="1">Industry Job</option>
+                  <option value="2">Higher Education</option>
+                  <option value="3">Teaching Job</option>
+                  <option value="4">Markiting</option>
+                </select>
+              </div>
+            </div>
+
+            <br>
+            <div *ngIf="show" class="custom-control custom-control-alternative custom-checkbox">
+              <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+              <label class="custom-control-label" for=" customCheckLogin">
+                <span> I AGREE WITH TERMS & CONDITIONS </span>
+              </label>
+            </div>
+            <div class="text-center">
+              <button aria-label="SIGN UP" (click)="registerUser()" type="button" class="btn  btn-txt my-4"
+                style="border-radius: 16px"
+                [disabled]="fname == '' || lname == '' || contact == '' || degree == '' || intIn == '' || branch == '' || emailInput == '' || collegeName == '' || passwordInput == '' || cpasswordInput == '' || !myRecaptcha.valid">SIGN
+                UP</button>
+            </div>
+
+
+            <div class="form-group" *ngIf="isForgotPassword">
+              <button aria-label="Cancel" type="button" class="btn" (click)="this.isForgotPassword=
+                false;">Cancel</button>
+              <button aria-label="Reset password" type="button" class="btn btn-primary" (click)="forgotPassword()">Get
+                email to reset passowrd</button>
+            </div>
+
+
+
+            <div class="alert alert-{{responseMessageType}}" role="alert" *ngIf="responseMessage.length">
+              {{responseMessage}}
+            </div>
+
+          </div>
+        </div>
+        <div class="row mt-3">
+
+          <div class="col-6 text-right">
+            <!-- <a href="javascript:void(0)" class="text-light"><small>Create new account</small></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>
+<!--  -->

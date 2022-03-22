@@ -1,0 +1,129 @@
+<div  class="container">
+<div class="col-md-12 text-center">
+  <h1 class="txtHeader ml-auto mr-auto"> <span class="border-bottom"> Enrolled Programs </span> </h1>
+</div>
+<div class="col-md-12 row text-center ml-auto mr-auto" style="height: 300px;">
+  <div *ngIf="!enrStatus" class="text-center mr-auto ml-auto">
+    <br><br><br>
+    <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/open-book.png?alt=media&token=9cd590df-8611-4420-91a3-50eb32a4f212" height="95px">
+    <h1 class="txtHeader" style="color: grey;">
+      You have not enrolled for Any Course
+    </h1>
+  </div>
+ 
+ <div *ngIf="r2 || r002" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
+      <div class="thumbnail shadow" style="border-radius: 5%;">
+        <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+          <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactorycoit-i.jpg?alt=media&token=3ad9f3c3-cdd6-4c5d-bb4e-6293a960b078" class="card-img-top"  alt="Core of IT industry" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+         <div>
+          <h6 class="txt " style="margin:0%"> <b>Core of IT industry</b> </h6>
+         </div>
+       </div> 
+     </div>
+ </div>
+
+ <div *ngIf="r02 && !r2 && !r002" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactorycoit-i.jpg?alt=media&token=3ad9f3c3-cdd6-4c5d-bb4e-6293a960b078" class="card-img-top"  alt="Core of IT industry" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <div class="text"> <button class="btn btn-danger btn-block" (click)="pay1('Core of IT industry (R)')"> Complete Fees </button></div>
+      <h6 class="txt " style="margin:0%"> <b>Core of IT industry (R)</b> </h6>
+     </div>
+   </div> 
+ </div>
+
+ <!-- <button class="btn btn-danger btn-sm" (click)="pay1('Core of IT industry (R)')"> Complete Fees </button> -->
+
+</div>
+
+ <div *ngIf="r3 || r003" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactorycdlc-i.jpg?alt=media&token=d079af88-5cc5-48ae-879e-ce27e8918b3a" class="card-img-top"  alt="core Dev Life Cycle" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <h6 class="txt" style="margin:0%;font-size: smaller;"> <b>Core Dev. Life Cycle</b> </h6>
+     </div>
+   </div> 
+ </div>
+</div>
+
+<div *ngIf="r03 && !r3 && !r003" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactorycdlc-i.jpg?alt=media&token=d079af88-5cc5-48ae-879e-ce27e8918b3a" class="card-img-top"  alt="core Dev Life Cycle" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <div class="text"> <button class="btn btn-danger btn-block" (click)="pay1('Core Development Life Cycle (R)')"> Complete Fees </button></div>
+      <h6 class="txt" style="margin:0%;font-size: smaller;"> <b>Core Dev. Life Cycle (R)</b> </h6>
+     </div>
+   </div> 
+ </div>
+
+ <!-- <button class="btn btn-danger btn-sm" (click)="pay1('Core Development Life Cycle (R)')"> Complete Fees </button> -->
+
+</div>
+
+<div *ngIf="r4 || r004" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactoryiot-i.jpg?alt=media&token=081e82e1-f67e-408f-82bf-92c89696177a" class="card-img-top"  alt="IOT" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <h6 class="txt " style="margin:0%"> <b>Internet of things</b> </h6>
+     </div>
+   </div> 
+ </div>
+</div>
+
+<div *ngIf="r04 && !r4 && !r004" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactoryiot-i.jpg?alt=media&token=081e82e1-f67e-408f-82bf-92c89696177a" class="card-img-top"  alt="IOT" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <div class="text"> <button class="btn btn-danger btn-block" (click)="pay1('Internet of things(IOT) (R)')"> Complete Fees </button></div>
+      <h6 class="txt " style="margin:0%"> <b>Internet of things(IOT) (R)</b> </h6>
+     </div>
+   </div> 
+ </div>
+
+ <!-- <button class="btn btn-danger btn-sm" (click)="pay1('Internet of things(IOT) (R)')"> Complete Fees </button> -->
+
+</div>
+
+<div *ngIf="r1 || r001" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactoryml-i.jpg?alt=media&token=2e4e3e23-9df1-4371-b169-9aa6d668d7c8" class="card-img-top"  alt="Machine learning" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <h6 class="txt " style="margin:0%"> <b>Machine learning</b> </h6>
+     </div>
+   </div> 
+ </div>
+</div>
+
+<div *ngIf="r01 && !r1 && !r001" class="box col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/inter%2FFormatFactoryml-i.jpg?alt=media&token=2e4e3e23-9df1-4371-b169-9aa6d668d7c8" class="card-img-top"  alt="Machine learning" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+      <div class="text"> <button class="btn btn-danger btn-block" (click)="pay1('Machine learning(ML) (R)')"> Complete Fees </button></div>
+     <div>
+      <h6 class="txt " style="margin:0%"> <b>Machine learning(ML) (R)</b> </h6>
+     </div>
+   </div> 
+ </div>
+<br>
+
+</div>
+
+<div *ngIf="scp" class=" col-lg-4 col-sm-6" style=" margin-top: 10px;margin-bottom: 10px; ">
+  <div class="thumbnail shadow" style="border-radius: 5%;">
+    <div class="card bg-white shadow border-0" style="border-radius: 5%;">
+      <img src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dash%2FFormatFactoryscl.jpg?alt=media&token=1f720f4b-e5af-4f02-b4cb-ae91cdf9625b" class="card-img-top"  alt="Scholarship" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
+     <div>
+      <h6 class="txt " style="margin:0%"> <b>Scholarship</b> </h6>
+     </div>
+   </div> 
+ </div>
+</div>
+
+</div>
+</div>

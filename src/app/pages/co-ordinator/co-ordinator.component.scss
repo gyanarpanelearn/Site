@@ -1,0 +1,42 @@
+.bk-img{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2FFormatFactoryppt.jpg?alt=media&token=b6c284d0-fbe4-4b84-af47-65978232c749")    ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ @media only screen and (max-width: 900px) {
+   .bk-img {
+      background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2FFormatFactoryppt.jpg?alt=media&token=b6c284d0-fbe4-4b84-af47-65978232c749")    ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: 100% 100%;
+   }
+}
+ 
+.demo-header {
+   background-size: cover;
+   background-color: #FF8F5E;
+   background-position: center top;
+   margin-top: 0px;
+   min-height: 600px;
+}
+
+.demo-header-image {
+   background-image: url("https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2FFormatFactoryppt.jpg?alt=media&token=b6c284d0-fbe4-4b84-af47-65978232c749");
+}
+.demo-header .motto {
+   color: #FFFFFF;
+   padding-top: 25vh;
+   text-align: center;
+   z-index: 3;
+}
+.title-uppercase {
+   text-transform: uppercase;
+}
+
+.thumbnail{
+   padding-top: 15px;
+   padding-bottom: 15px;
+}

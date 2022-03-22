@@ -1,0 +1,455 @@
+<nav id="navbar-main" class="navbar navbar-horizontal containerz navbar-main navbar-expand-lg sticky-top navbar-light  "
+  style="background-color: white;margin: 0;padding: 0;">
+  <!-- <div class="container" style="margin-left: 65px;font-size: smaller;"> -->
+
+  <a [routerLink]="['/student-dash']">
+    <img class="" alt="logo" style="margin-left: 70px;"
+      src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782"
+      width="auto" height="65px">
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbar_global" aria-label="Extend">
+    <i class="ni ni-ui-04"></i>
+  </button>
+
+  <div class="navbar-collapse collapse" style="margin-right: 0px;" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div class="navbar-collapse-header">
+      <div class="row">
+        <div class="col-6 collapse-brand">
+          <a [routerLink]="['/student-dash']">
+            <img alt="logo"
+              src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782">
+          </a>
+        </div>
+        <div class="col-6 collapse-close">
+          <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global" aria-label="Collapse">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('stats')" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> HOME</b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('scholarship')" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> SCHOLARSHIP </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('internship')" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> INTERNSHIP </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('programs')" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> OUR PROGRAMS </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('stats')" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> IMPORTANT DATES </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <!-- <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('exams')" data-toggle="tooltip" title="  ">
+          <b style="font-size: small;"> EXAM </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li> -->
+
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="onClickN('code-practice')" data-toggle="tooltip" title="CODE PRACTICE">
+          <b style="font-size: small;"> CODE PRACTICE </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="logoutUser()" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> LOGOUT </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+
+      <ul *ngIf="" class="navbar-nav navbar-nav-hover align-items-lg-center" style="margin-right: 140px;">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-single-02"></i>
+            <!-- <b style="font-size: small;">CAREER</b>   -->
+          </a>
+          <div class="dropdown-menu">
+            <a [routerLink]="['/']" class="dropdown-item"> PROFILE </a>
+            <p (click)="logoutUser()">Logout</p>
+            <!-- <a [routerLink]="['/']" class="dropdown-item"> LOGOUT </a> -->
+            <!-- <a [routerLink]="['/']" class="dropdown-item">SKILLED GRADUATES RESUME</a> -->
+          </div>
+        </li>
+      </ul>
+
+    </ul>
+  </div>
+  <!-- </div> -->
+</nav>
+
+
+<nav id="stats" class="navbar navbar-horizontal bg-white">
+  <div class="container rol col-md-12">
+    <div *ngIf="!scrEEn" class="col-md-1"></div>
+
+    <div *ngIf="!scrEEn" class="col-md-4">
+      <h2 class="txt txtHeader border-bottom"><b> WELCOME BACK {{userDetails['displayName']}} </b></h2>
+      <div *ngIf="lresult" class="alert alert-secondary shadow-lg" style="padding: 8px;border: 0.5px solid #126f9a;"
+        role="alert">
+        Your Aptitude Test 1 Result : <b> {{ lresult }} out of 40 marks</b>
+      </div>
+    </div>
+
+    <div *ngIf="scrEEn" class="col-md-12">
+      <h2 class="txt txtHeader border-bottom"><b> WELCOME BACK {{userDetails['displayName']}} </b></h2>
+      <div *ngIf="lresult" class="alert alert-secondary shadow-lg" style="padding: 8px;border: 0.5px solid #126f9a;"
+        role="alert">
+        Your Aptitude Test 3 Result : <b> {{ lresult }} out of 30 marks</b>
+      </div>
+    </div>
+
+    <div *ngIf="!scrEEn" class="col-md-7 row">
+
+      <div class="col-md-4 border-right" style="margin-top: 40px;">
+        <p *ngIf="show" class="txtSub text-center"> Scholarship Registration is Starting </p>
+        <ng-template #classic let-c="close" let-d="dismiss">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title" id="modal-title-default">Continue for Scholarship Registration</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <ul>
+                <li>
+                  Click on <b>Continue</b> button Now
+                </li>
+                <li>
+                  On next page click on register now
+                  <!-- Continue the process -->
+                </li>
+                <li>
+                  Fill the form and submit
+                </li>
+                <li>
+                  You will be redirected to the <i>secure payment page</i>
+                </li>
+                <li>
+                  Make payment of 500.00 &#x20B9;
+                </li>
+                <li>
+                  All afterwards details will be sent to your registered e-mail address
+                </li>
+                <li>
+                  And <i>importantly</i> the paper format will be available before, you will be informed of that
+                </li>
+              </ul>
+
+            </div>
+            <div class="modal-footer">
+
+              <a [routerLink]="['/pay-for']" (click)="c('Continue click')"> <button type="button" class="btn btn-txt">
+                  Continue > </button> </a>
+              <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal" (click)="c('Close click')">
+                Cancel </button>
+            </div>
+          </div>
+        </ng-template>
+
+        <!-- (click)="open(classic,'' , '')" -->
+        <br>
+        <button *ngIf="show" class="btn button btn-lg btn-block btn-txt border-secondary" (click)="enrollForSch()">
+          Enroll for
+          scholarship </button>
+        <h4 *ngIf="show" class="txtHeader mr-auto ml-auto text-center"> <br><br> <span class="border-bottom"> &nbsp;
+            ENROLLMENT STATUS &nbsp; </span> </h4>
+
+        <button *ngIf="show" class="btn btn-lg btn-block btn-txt border-secondary"> scholarship </button>
+        <button *ngIf="show" class="btn btn-lg btn-block btn-txt border-secondary"> internship </button>
+        <button *ngIf="show" class="btn btn-lg btn-block btn-txt border-secondary"> iot </button>
+        <button *ngIf="show" class="btn btn-lg btn-block btn-txt border-secondary"> machine learning </button>
+      </div>
+
+      <div class="col-md-8" style="margin-top: -80px;">
+        <h4 class="txtHeader mr-auto ml-auto text-right"> <br><br> <span class="border-bottom">&nbsp;UPCOMING
+            EVENTS&nbsp;</span> </h4>
+
+        <!-- <div class="alert alert-danger shadow-lg" style="padding: 8px;" role="alert">
+            Scholarship test registration start date : <b>1st JAN, 2021 </b>
+      </div>
+      <div class="alert alert-secondary shadow-lg" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+            Scholarship test registration end date : <b>7th MARCH, 2021</b>
+      </div>
+      <div class="alert alert-secondary shadow" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+             Scholarship exam date : <b>14th MARCH, 2021</b>
+      </div>
+      <div class="alert alert-secondary shadow" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+            Scholarship result date : <b>16th MARCH, 2021</b>
+      </div> -->
+        <div class="alert alert-danger shadow" style="padding: 8px;" role="alert">
+          Internship registration start date : <b>13th JAN 2021 </b>
+        </div>
+        <div class="alert alert-secondary shadow" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+          Core of IT Industry Internship (Enroll by) : <b>16th FEB, 2021</b>
+        </div>
+        <div class="alert alert-secondary shadow" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+          Full Stack Development Pre-placement (Enroll by) : <b>25TH FEB, 2021</b>
+        </div>
+        <div *ngIf="rems == 'yes'" class="alert alert-danger shadow" style="padding: 8px;" role="alert">
+          Remaining course fees payment upto : <b>25TH FEB, 2021 </b>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="scrEEn" class="col-md-12 row">
+
+      <div class="col-md-8" style="margin-top: -80px;">
+        <h4 class="txtHeader mr-auto ml-auto text-center" style="color: #126f9a;"> <br><br> <span
+            class="border-bottom">&nbsp;UPCOMING EVENTS&nbsp;</span> </h4>
+
+        <div class="alert alert-danger shadow-lg" style="padding: 8px;" role="alert">
+          Scholarship test registration start date : <b>1st JAN, 2021 </b>
+        </div>
+        <div class="alert alert-secondary shadow-lg" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+          Scholarship test registration end date : <b>15th JAN, 2021</b>
+        </div>
+        <div class="alert alert-secondary shadow" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+          Scholarship exam date : <b>18th JAN, 2021</b>
+        </div>
+        <div class="alert alert-secondary shadow" style="padding: 8px;border: 0.5px solid #126f9a;" role="alert">
+          Scholarship result date : <b>20th march, 2021</b>
+        </div>
+        <div class="alert alert-danger shadow" style="padding: 8px;" role="alert">
+          Internship registration start date : <b>13th Jan 2021 </b>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+
+
+<app-enr-progs></app-enr-progs>
+
+<div class="container" id="scholarship">
+  <div class="row row-grid align-items-center">
+    <div class="col-md-12 row">
+      <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; SCHOLARSHIP &nbsp; </span>
+      </h2>
+
+    </div>
+
+
+    <div class="col-md-5"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+      <div class=" ">
+        <img alt="scholarship" class="img2" alt="scholarship"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dash%2FFormatFactoryscl.jpg?alt=media&token=1f720f4b-e5af-4f02-b4cb-ae91cdf9625b"
+          style="border-radius: 10px;" width="100%">
+      </div><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+    </div>
+
+
+    <div class="col-md-6" style="margin-left: 20px;">
+      <!-- <div class="pl-md-5"> -->
+      <!-- <br><br> -->
+
+      Students can be eligible for a scholarship up to INR 35000 based on their performance in the scholarship test.
+      Now, students struggling for the job just need to focus on improving their skill set through our courses, which
+      helps them to get their dream job. Scholarship Test will be conducted across different colleges to make it easy
+      for students to take the exam. Students can also register and take the test from anywhere.
+
+      <br><br><br>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+
+<div *ngIf="!scrEEn" class="container">
+  <div class="row row-grid align-items-center">
+    <div class="col-md-12 row">
+    </div>
+    <div class="col-md-5" style="margin-right: 20px;">
+      <!-- <div class="pl-md-5"> -->
+      <!-- <br><br> -->
+      <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; INTERNSHIP &nbsp; </span>
+      </h2>
+
+      Get the experience of working on real-world projects. Our industry experts shall help you in enhancing your
+      knowledge and help you innovate. Gyanarpan internship not only gives you a certificate but makes you
+      industry-ready. Our 45 days internship program help student improve logically and learn to code. The student shall
+      undergo various training program which is needed in the current market. For more details please check our
+      internship program that is designed by our team of IITan’s, NITan’s & Industry professionals.
+
+      <br><br><br>
+
+
+      <!-- </div> -->
+      <br><br><br>
+    </div>
+
+    <div class="col-md-6"><br><br>
+      <div class=" ">
+        <img class="img2" alt="INTERNSHIP" style="border-radius: 10px;"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dash%2FFormatFactoryint.jpg?alt=media&token=30c788d4-2681-43fa-850c-5b146108bea6"
+          width="100%">
+      </div><br><br>
+    </div>
+
+  </div>
+  <br>
+</div>
+
+
+<div *ngIf="scrEEn" class="container">
+  <div class="row row-grid align-items-center">
+    <div class="col-md-12 row">
+      <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; INTERNSHIP &nbsp; </span>
+      </h2>
+    </div>
+
+    <div class="col-md-6"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+      <div class=" ">
+        <img class="img2" alt="INTERNSHIP"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dash%2FFormatFactoryint.jpg?alt=media&token=30c788d4-2681-43fa-850c-5b146108bea6"
+          width="100%">
+      </div><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+    </div>
+
+    <div class="col-md-6">
+      <!-- <div class="pl-md-5"> -->
+      <!-- <br><br> -->
+
+      Get the experience of working on real-world projects. Our industry experts shall help you in enhancing your
+      knowledge and help you innovate. Gyanarpan internship not only gives you a certificate but makes you
+      industry-ready. Our 45 days internship program help student improve logically and learn to code. The student shall
+      undergo various training program which is needed in the current market. For more details please check our
+      internship program that is designed by our team of IITan’s, NITan’s & Industry professionals.
+
+      <br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br>
+
+
+      <!-- </div> -->
+      <br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+    </div>
+
+
+  </div>
+  <br>
+</div>
+
+<!--  -->
+
+<app-ourinternshipprograms></app-ourinternshipprograms>
+
+<br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+
+<app-programs></app-programs>
+
+<br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+<!-- exams -->
+<!-- <section *ngIf="examApp" id="exams" class="section bg-white container" style="margin-top: -20px;">
+  <div class="col-md-12 row">
+    <div class="col-md-12 text-center">
+      <h2 class="txtHeader mr-auto ml-auto text-center"> <span class="border-bottom">&nbsp;EXAM&nbsp;</span> </h2>
+      <div>
+        <a [routerLink]="['/exams']"><button class="btn btn-txt btn-lg"> SEE Exams </button></a>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- exams -->
+
+<!-- ide -->
+<section id="code-practice" class="section bg-white container" style="margin-top: -20px;">
+  <div class="col-md-12 row">
+    <div class="col-md-12 text-center">
+      <h2 class="txtHeader mr-auto ml-auto text-center"> <span class="border-bottom">&nbsp;CODE PRACTICE&nbsp;</span> </h2>
+      <div>
+        <!-- <a [routerLink]="['/ide']"><button class="btn btn-txt btn-lg"> PRACTICE CODING HERE </button></a> -->
+        <a href="https://gyanarpan.com/ide/#/ide"><button class="btn btn-txt btn-lg"> PRACTICE CODING HERE </button></a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ide -->
+
+<br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+
+<section class="section bg-white container" style="margin-top: -20px;">
+  <div class="col-md-12 row">
+
+    <div class="col-md-6">
+      <div>
+        <img class="img2" alt="100% job guarantee"
+          src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed%2F100-percent-jobgurr.webp?alt=media&token=2c118da1-4af0-4670-aa55-5b77783eed0a"
+          width="100%;">
+      </div>
+    </div>
+    <div class="col-md-5">
+      <!-- <div class="pl-md-5"> -->
+      <!-- <br><br> -->
+      <h2 class="txtHeader mr-auto ml-auto text-left"><span class="border-bottom" style="margin-left: -5px;"> 100% Job
+          Guarantee</span> <sup style="font-size: 28px;">*</sup> </h2>
+
+      <p style="text-align: justify;" class="ntxt"> <b>
+          Our industry-leading programs give students everything they need to Step Up and Succeed. It helps student in
+          enhancing their technical and interpersonal skills and staying ahead of the crowd. We assure 100% placement
+          within 6 months of the successful completion of the pre-placement program. Students get eligible for
+          money-back guarantee if they don't get a job within 6 months of the course completion.
+        </b></p>
+      <a [routerLink]="['/terms']" style="color: #126f9a;text-decoration: underline;"> Terms & Conditions </a>
+
+      <!-- </div> -->
+    </div>
+
+    <!-- </div> -->
+
+  </div>
+</section>
+
+<!-- <div class="sfooter bg-white containerz"  style="padding-top: 12px;color:#126f9a;">
+        Enroll for scholarship Now &#9758; &nbsp;&nbsp;&nbsp;&nbsp; <button class="btn button btn-txt border-secondary" (click)="open(classic,'' , '')"> Enroll for scholarship </button>
+      </div> -->
+
+<app-footer></app-footer>

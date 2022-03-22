@@ -1,0 +1,115 @@
+<app-navbar></app-navbar>
+
+<!-- <br> -->
+
+<nav class=" bg-secondary" style="padding: 0px;">
+
+    <div class="container ">
+        <div class="row">
+
+            <div class="col-8" style="padding-top: 10px; margin: 0px;">
+                <ul class="pagination pagination-lg" style="margin: 0px;padding: 0px;">
+                    Home > Courses > <b>Salesforce Admin</b>
+                </ul>
+            </div>
+
+            <div class="col-4" style="padding:0px;margin: 0px;">
+                <div class="form-group" style="padding:0px;margin: 0px;">
+                    <div class="input-group " style="padding:0px;margin: 0px;">
+                        <!-- <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                </div> -->
+                        <input class="form-control" placeholder="Search" type="text">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</nav>
+
+
+<div class="container">
+    <!-- <br> -->
+
+
+    <div class="row">
+        <div class="col-8">
+            <h2>Salesforce Admin</h2>
+
+            <h5 class="text-muted">Category : Salesforce</h5>
+        </div>
+
+        <div class="col-4">
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-8 col-md-8  ">
+            <ngb-tabset [justify]="'center'" class="custom-tab-content flex-column flex-md-row" type="pills">
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <i class="ni ni-cloud-upload-96 mr-2"></i> Curriculum
+
+
+
+                    </ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="description"> Curriculum </p>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <i class="ni ni-bell-55 mr-2"></i> Free Videos
+                    </ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="description"> Free Videos </p>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <i class="ni ni-calendar-grid-58 mr-2"></i> Overview
+                    </ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="description"> Overview </p>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <i class="ni ni-calendar-grid-58 mr-2"></i> Instructor
+                    </ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="description"> Instructor </p>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+
+            <div class="card shadow border-0" style="padding-top: 0px;">
+                <div class="card-body " style="padding: 10px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fZCe_JY8oUI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <h6 class="text-primary ">Salesforce Admin</h6>
+                    <p class="text-muted">Category : Salesforce</p>
+                    <h6 class="text-default ">Salesforce Admin Module</h6>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Register Here</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<br><br>
+
+<app-footer></app-footer>

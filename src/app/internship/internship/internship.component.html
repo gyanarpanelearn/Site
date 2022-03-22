@@ -1,0 +1,802 @@
+<nav id="navbar-main"
+    class="navbar navbar-horizontal  containerz  navbar-main navbar-expand-lg sticky-top navbar-light  "
+    style="background-color: white;margin: 0;padding: 0;">
+    <!-- <div class="container" style="margin-left: 65px;font-size: smaller;"> -->
+
+    <a [routerLink]="['/home']">
+        <img class="" alt="logo" style="margin-left: 70px;"
+            src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782"
+            width="auto" height="65px">
+    </a>
+
+    <button class="navbar-toggler" type="button" aria-controls="navbar_global" aria-label="More"
+        (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
+        <i class="ni ni-ui-04"></i>
+    </button>
+
+    <div class="navbar-collapse collapse" style="margin-right: 0px;" id="navbar_global" [ngbCollapse]="isCollapsed">
+        <div class="navbar-collapse-header">
+            <div class="row">
+                <div class="col-6 collapse-brand">
+                    <a>
+                        <img alt="logo"
+                            src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782">
+                    </a>
+                </div>
+                <div class="col-6 collapse-close">
+                    <button type="button" class="navbar-toggler" aria-controls="navbar_global" aria-label="Collapse"
+                        (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item" style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" [routerLink]="['/home']" data-toggle="tooltip" title="  ">
+                    <!-- <i class="fa fa-home"></i>  -->
+                    <b style="font-size: small;"> HOME</b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" (click)="onClickN('stats')" data-toggle="tooltip" title="  ">
+                    <!-- <i class="fa fa-graduation-cap	"></i> -->
+                    <b style="font-size: small;"> INTERNSHIP </b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+
+            <li class="nav-item " style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" (click)="onClickN('cert')" data-toggle="tooltip" title="  ">
+                    <!-- <i class="ni ni-planet"></i>  -->
+                    <b style="font-size: small;"> CERTIFICATE </b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+
+            <li class="nav-item " style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" (click)="onClickN('internship')" data-toggle="tooltip" title="  ">
+                    <!-- <i class="ni ni-planet"></i>  -->
+                    <b style="font-size: small;"> PROGRAMS </b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+            <li class="nav-item " style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" (click)="onClickN('benefits')" data-toggle="tooltip" title="  ">
+                    <!-- <i class="ni ni-planet"></i>  -->
+                    <b style="font-size: small;"> BENEFITS </b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+
+            <li *ngIf="show" class="nav-item " style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" [routerLink]="['/auth/login']" data-toggle="tooltip" title="  ">
+                    <!-- <i class="ni ni-planet"></i>  -->
+                    <b style="font-size: small;"> LOGIN </b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+
+            <li *ngIf="show" class="nav-item " style="padding-right: 3px;">
+                <a class="nav-link nav-link-icon" (click)="onClickN('programs')" data-toggle="tooltip" title="  ">
+                    <!-- <i class="ni ni-planet"></i>  -->
+                    <b style="font-size: small;" class="btn btn-sm btn-txt"> ENROLL NOW </b>
+                    <span class="nav-link-inner--text d-lg-none"> </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- </div> -->
+</nav>
+
+
+
+
+
+
+<nav id="stats" class="navbar navbar-horizontal bg-white" style="padding: 0%;">
+    <div class="row col-lg-12" style="padding: 0%;margin: 0%;">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-6 ">
+
+
+            <br>
+            <div style="position:relative;">
+
+                <img alt="icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrr%2FFormatFactoryinternship-landing-page.jpg?alt=media&token=0eb13365-9180-4073-929a-8155484a4892"
+                    width="100%">
+
+            </div>
+
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+        </div>
+
+
+        <div class="col-md-5">
+            <h2 class="txt txtHeader border-bottom"><b> "LEARN BY DOING" </b></h2>
+            <!-- <img src="../../assets/img/periwinkle-blue-circle.png"> -->
+            <p style="text-align: justify;"><b>
+                    Research shows that immersive hands-on learning is more effective than reading. We offer an
+                    invaluable project-based training program to strengthen the skills and knowledge required for your
+                    future. You will be trained by the best people in the industry who will teach you everything you
+                    need to do the best in the industry and to face the challenges of the real world. Our 45-day
+                    internship program gives you the confidence to innovate as you work on your minor and major
+                    projects. Free interview sessions conducted during this time will give you an understanding of how
+                    to deal with challenges in an interview. Only 100 students will be given the opportunity to be
+                    enrolled in the internship program in each batch.
+                </b>
+            </p>
+
+
+            <h6 class="txt"> <b> New batch started from : 17<sup>th</sup> Feb 2021 </b></h6>
+
+            <!-- <h6 class="txt "><b> Time remaining </b></h6>
+
+            <div class="cd3">
+                <countdown [text]="into" units="Days | Hours | Minutes | Seconds" end="February 17, 2021"></countdown>
+            </div> -->
+
+        </div>
+
+    </div>
+</nav>
+
+
+<section class="section bg-white" id="cert">
+    <div class="container">
+        <div class="row row-grid align-items-center">
+            <div class="col-md-6">
+                <div class="pl-md-5">
+
+                    <h2 *ngIf="!scrEEn" class="txtHeader border-bottom"> CERTIFICATE </h2>
+                    <h2 *ngIf="scrEEn" class="txtHeader mr-auto ml-auto text-center border-bottom"> CERTIFICATE </h2>
+                    <br>
+                    <p style="font-size: bold;"> Upon successful completion of the course, internship completion
+                        certificate will be granted to you by Gyanarpan which will - </p>
+
+                    <ul style="padding-left: 0;list-style-type: none;">
+                        <li>
+                            <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                                <b> Act as validation or recognition from the industry. </b>
+                            </p>
+                        </li>
+                        <li>
+                            <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                                <b> Give you an advantage over your peers </b>
+                            </p>
+                        </li>
+                        <li>
+                            <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                                <b> Highlight your skills and unique talents</b>
+                            </p>
+                        </li>
+                        <li>
+                            <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                                <b> Help in increasing job prospects </b>
+                            </p>
+                        </li>
+                        <li>
+                            <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                                <b> Assist in applications for higher education </b>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-default shadow border-0">
+                    <!-- <div class="card-img-top bg-default bg-dark">
+                            <p>Fees : 1200 inr</p>
+                            <p>Date of Exam : 25 sep 2019</p>
+                            <p>Duration : 2 hrs </p>
+                        </div> -->
+
+                    <blockquote class="card-blockquote">
+
+                        <img alt="icon" *ngIf="!scrEEn"
+                            src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrr%2FFormatFactorycert.jpg?alt=media&token=f6f4367d-cc09-48ab-99a7-3c7467c93501"
+                            width="410px">
+                        <img alt="icon" *ngIf="scrEEn"
+                            src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrr%2FFormatFactorycert.jpg?alt=media&token=f6f4367d-cc09-48ab-99a7-3c7467c93501"
+                            width="100%">
+                        <!-- <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.</p> -->
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+
+<!-- <app-ourinternshipprograms></app-ourinternshipprograms> -->
+
+
+<nav *ngIf="show" id="stats" class="navbar navbar-horizontal bg-white">
+    <div class="row col-lg-12">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5">
+            <br><br><br>
+            <h3><b> INTERNET OF THINGS(IOT) PRE-PLACEMENT PROGRAM </b></h3>
+            <br><br>
+            <h3><b> 100% JOB GURANTEED </b></h3>
+
+            <button (click)="onClickN('feess')" class="btn btn-lg btn-txt"> ENROLL NOW </button> &nbsp;&nbsp;&nbsp;
+            <button (click)="onClickN('team')" class="btn btn-lg btn-txt"> TAKE A TEST </button>
+        </div>
+
+
+        <div class="col-md-6 ">
+
+            <!-- style="background-image: url('../../assets/img/periwinkle-blue-circle.png');   background-repeat: no-repeat;  background-position: right;    height: 500px;" -->
+
+            <br>
+            <div style="position:relative;">
+                <img alt="internship"
+                    src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrr%2FFormatFactoryinternship-landing-page.jpg?alt=media&token=0eb13365-9180-4073-929a-8155484a4892"
+                    width="100%">
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<!--  -->
+
+<div class="position-relative">
+    <div class="demo-header demo-header-image">
+
+        <div class="motto row col-md-12  text-center">
+            <div *ngIf="!scrEEn" style="margin-top: 190px;margin-left: 42%;">
+                <button class="btn btn-txt shadow" (click)="onClickN('feess')" style="font-weight: bold;"> ENROLL NOW
+                </button>
+                <button class="btn btn-secondary shadow" (click)="onClickN('take-test')"
+                    style="color: #126f9a;font-weight: bold;"> TAKE A TEST </button>
+                <br><br><br><br>
+            </div>
+            <div *ngIf="scrEEn" style="margin-top: 70px;margin-left: 70px;">
+                <button class="btn btn-txt btn-sm shadow" (click)="onClickN('feess')" style="font-weight: bold;"> ENROLL
+                    NOW </button>
+                <button class="btn btn-secondary btn-sm shadow" (click)="onClickN('take-test')"
+                    style="color: #126f9a;font-weight: bold;border: 1px solid #126f9a;"> TAKE A TEST </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  -->
+
+<div>
+    <div class="row  mb-lg" style="padding: 0px;margin: 0px;">
+        <div class="col-lg-12">
+            <br><br><br>
+            <h2 class="txtHeader text-center mr-auto ml-auto"> <span class="border-bottom"> &nbsp; DESCRIPTION
+                    &nbsp;</span> </h2><br>
+            <div class="container text-center">
+                <p style="text-align: justify;"><b>This internship program is specially designed for fresh brains who
+                        will be
+                        empowered with technical skills and shall be working on Industry Based Live Projects. Our team
+                        of
+                        experts shall help you learning since we share mutual passion for technology and believe in
+                        doing
+                        excellent work for students to build their career.</b>
+                    <br>
+                </p>
+                <b style="text-align: center;">This internship program is for student in:</b>
+                <!-- <ul style="margin-left: 20px;list-style-type: none;">
+                    
+                    
+                </ul> -->
+                <div class="container row" style="text-align: justify;">
+                    <div class="col-3"></div>
+                    <div class="col-4"> <br>
+
+                        <img alt="icon" src="https://image.flaticon.com/icons/svg/308/308236.svg" height="25px"
+                            style="margin-top: 10px"> B.E 2nd
+                        year (CSE, IT, EC) Students <br>
+
+                        <img alt="icon" src="https://image.flaticon.com/icons/svg/308/308236.svg" height="25px"
+                            style="margin-top: 10px"> B.E 3rd
+                        year (CSE, IT, EC) Students <br>
+
+                        <img alt="icon" src="https://image.flaticon.com/icons/svg/308/308236.svg" height="25px"
+                            style="margin-top: 10px"> BSC
+                        Students <br>
+
+                    </div>
+
+                    <div class="col-4"> <br>
+
+                        <img alt="icon" src="https://image.flaticon.com/icons/svg/308/308236.svg" height="25px"
+                            style="margin-top: 10px"> BCA
+                        Students <br>
+
+                        <img alt="icon" src="https://image.flaticon.com/icons/svg/308/308236.svg" height="25px"
+                            style="margin-top: 10px"> MSC
+                        Students <br>
+
+                        <img alt="icon" src="https://image.flaticon.com/icons/svg/308/308236.svg" height="25px"
+                            style="margin-top: 10px"> MCA
+                        Students <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-horizontal bg-secondary" style="padding: 1%;">
+
+    <div class="row col-md-12 text-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-3 " style="margin-bottom: 30px;">
+            <h2 style="font-size: 16px;">DURATION </h2>
+            <p style="font-weight: bold;">
+                (30 + 45) days<br>
+                30 days Aptitude training<br>
+                45 days technical + Working on live project
+            </p>
+            <p> Weekly 6 days</p>
+        </div>
+        <div class="col-md-3 " style="border-left: 2px solid grey;border-right: 2px solid grey; margin-bottom: 30px;">
+            <h2 style="font-size: 16px;"> ENROLL BY </h2>
+            <p style="font-weight: bold;text-decoration: underline;"> 16<sup>th</sup> February, 2021</p>
+            <p>Get access to all material and offline training program immediately after enrollment.</p>
+        </div>
+        <div class="col-md-4  " style="  margin-bottom: 30px;">
+            <h2 style="font-size: 16px;"> PREREQUISITES </h2>
+            <p>
+                <b style="font-weight: bold;text-decoration: underline;">No programming knowledge. Student should have
+                    strong commitment and dedication to learn and complete this program is required</b> <br> <i>(prior
+                    of programming is not required)</i>
+            </p>
+            <p></p>
+        </div>
+    </div>
+</nav>
+
+<br><br><br>
+
+<!--  -->
+<div class="container" id="benefits" style="background-color: #F9F9F9;">
+    <div class="row row-grid align-items-center">
+        <div class="col-md-12 row">
+            <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; INTERNSHIP BENEFITS
+                    &nbsp; </span> </h2>
+            <br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+        </div>
+
+
+        <div *ngIf="scrEEn" class="col-md-6">
+            <ul style="padding-left: 0;list-style-type: none;">
+
+
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/1454/1454500.png"
+                                height="25px"> Interview Training
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/1402/1402153.png"
+                                height="25px"> 5+ Mock Interviews
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/2132/2132962.png"
+                                height="25px"> FREE 60 days Aptitude Training
+                        </b>
+                    </p>
+                </li>
+
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/1454/1454500.png"
+                                height="25px"> 1-to-1 Mentoring
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/2132/2132962.png"
+                                height="25px"> Resume Building
+                        </b>
+                    </p>
+                </li>
+
+                <!-- <li>  <p>   
+              <b> 
+                  <img src="https://image.flaticon.com/icons/png/512/1087/1087815.png" height="25px">   Research Based Mini & Major Project Assistance
+              </b>
+              </p>
+              </li> -->
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/942/942748.png" height="25px">
+                            Internship Certificate
+                        </b>
+                    </p>
+                </li>
+            </ul>
+            <!-- <br>  -->
+        </div>
+
+        <div *ngIf="!scrEEn" class="col-md-2"></div>
+        <div *ngIf="!scrEEn" class="col-md-4">
+            <!-- <br>  -->
+            <ul style="padding-left: 0;list-style-type: none;">
+
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/1454/1454500.png"
+                                height="25px"> Interview Training
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/1402/1402153.png"
+                                height="25px"> 5+ Mock Interviews
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/2132/2132962.png"
+                                height="25px"> FREE 60 days Aptitude Training
+                        </b>
+                    </p>
+                </li>
+            </ul>
+            <!-- <br>  -->
+        </div>
+
+        <div *ngIf="!scrEEn" class="col-md-6">
+            <!-- <br> -->
+            <ul style="padding-left: 0;list-style-type: none;">
+
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/1454/1454500.png"
+                                height="25px"> 1-to-1 Mentoring
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/2132/2132962.png"
+                                height="25px"> Resume Building
+                        </b>
+                    </p>
+                </li>
+
+                <!-- <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1087/1087815.png" height="25px">    Research Based Mini & Major Project Assistance
+              </b>
+              </p>
+              </li> -->
+
+                <li>
+                    <p>
+                        <b>
+                            <img alt="icon" src="https://image.flaticon.com/icons/png/512/942/942748.png" height="25px">
+                            Internship Certificate
+                        </b>
+                    </p>
+                </li>
+            </ul>
+            <!-- <br>  -->
+        </div>
+
+    </div>
+    <br>
+</div>
+<!--  -->
+
+<nav id="syllabus" class="navbar navbar-horizontal bg-white" style="padding: 3%;">
+    <div class="col-md-12">
+        <h2 class="txtHeader text-center"> COURSE CONTENT </h2>
+    </div>
+
+</nav>
+
+<app-cctfsd></app-cctfsd>
+
+
+<div class="col-lg-12 row text-center" id="take-test"
+    style=" background-image: url('https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fbg-about.jpg?alt=media&token=a2fe3efa-88f4-4eef-ad6f-da9e81ba7b5b');background-size: cover;">
+
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <br><br><br>
+        <p style="text-align: center;color: #ffffff;"><b>
+                This test helps us to assess your level of knowledge and understanding of the subject. As per your
+                performance in the test, we assign a mentor who will assist you in every possible way to master the
+                course and achieve your goals.
+                <br><br>
+            </b></p>
+    </div>
+    <div class="col-lg-2"></div>
+
+    <button class="btn btn-secondary text-center mr-auto ml-auto" disabled style="color: #126f9a;"> START THE TEST NOW
+    </button>
+    <div class="col-lg-12"><br><br></div>
+</div>
+
+
+<nav id="feess" class="navbar navbar-horizontal " style="background-color: #ffffff">
+
+    <div class="container">
+        <div class="container row col-md-12">
+
+            <div class="col-md-12 text-center">
+                <br><br>
+                <h2 class="title txtf txtHeader"> INTERNSHIP PROGRAM FEES </h2>
+                <!-- <br><br> -->
+            </div>
+
+            <!-- <div class="container row col-md-12">
+            <br><br><br>
+        </div> -->
+        </div>
+    </div>
+</nav>
+
+<app-pricecdlc></app-pricecdlc>
+
+<!-- <br><br> -->
+
+<!-- <app-internshipcoursecontent></app-internshipcoursecontent> -->
+
+<h1 class="txtHeader text-center mr-auto ml-auto" style="margin: 0%;padding: 0%;"> <span class="border-bottom"> &nbsp;
+        WHAT OUR INTERNS TALK ABOUT US &nbsp; </span> </h1>
+<app-message></app-message>
+
+<!--  -->
+<!-- <div class="col-md-4"> -->
+
+<!--  -->
+<br><br>
+
+<!--  -->
+<br>
+<!--  -->
+<div *ngIf="show" class="container" id="benefits">
+    <div class="row row-grid align-items-center">
+        <div class="col-md-12 row">
+            <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; INTERNSHIP BENEFITS
+                    &nbsp; </span> </h2>
+        </div>
+
+        <div class="col-md-6">
+
+            <img alt="icon"
+                src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsr%2F3-img.jpg?alt=media&token=89eda4cd-a859-48a2-9f43-4155fa368c66"
+                style="border-radius: 20px" height="380px;">
+
+        </div>
+
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <ul style="padding-left: 0;list-style-type: none;">
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            100% PLACEMENT GURANTEE
+                        </b>
+                    </p>
+                </li>
+
+
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            INTERVIEW TRAINING
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            5+ MOCK INTERVIEW
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            PERSONALITY DEVELOPMENT TRAINING
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            APTITUDE TRAINING
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            CAREER GUAIDANCE
+                        </b>
+                    </p>
+                </li>
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            ONE TO ONE MENTORING
+                        </b>
+                    </p>
+                </li>
+
+
+                <li>
+                    <p> <i class="ni ni-check-bold" style="color: green;"></i>
+                        <b>
+                            DIGITAL AV RESUME
+                        </b>
+                    </p>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </div>
+    <br>
+</div>
+<!--  -->
+
+<!--  -->
+<br *ngIf="!scrEEn">
+<!--  -->
+<div class="container">
+    <div class="row row-grid align-items-center">
+        <div class="col-md-12 row" style="margin-left: 0px;margin-right: 0px;">
+            <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; IoT LAB IN COLLEGE
+                    &nbsp; </span> </h2>
+
+        </div>
+
+        <div class="col-md-6"> <br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+            <div class="card bg-white shadow border-0">
+                <img alt="icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fiot-lab.jpg?alt=media&token=5b47d7b9-ecb8-4c7c-b173-42b51a9b590a"
+                    style="border-radius: 20px" width="100%">
+            </div>
+        </div>
+
+        <div class="col-md-6"> <br *ngIf="!scrEEn"><br *ngIf="!scrEEn">
+            <p style="text-align :justify;"> <b>
+                    Internet of Things is becoming popular day by day, so it's very important for fresh graduates to be
+                    skilled at IoT. Gyanarpan has started an initiative to start an IoT lab at every college across
+                    India. The required equipment to set up an IoT laboratory will be provided free of cost by
+                    Gyanarpan.
+                </b> </p>
+
+            <br> <a [routerLink]="['/enq']"> <button class="btn btn-txt"> Enquire Now </button> </a>
+            <div *ngIf="!scrEEn"><br> <br><br><br><br><br><br></div>
+        </div>
+    </div>
+    <br>
+</div>
+<!--  -->
+
+<br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br *ngIf="!scrEEn"><br>
+
+<!--  -->
+<div *ngIf="!scrEEn" class="container">
+    <div class="row row-grid align-items-center">
+        <div class="col-md-12 row" style="margin: 0px;padding: 0px;">
+            <h2 class="txtHeader mr-auto ml-auto text-left"> <span class="border-bottom"> &nbsp; DEVELOPMENT LAB IN
+                    COLLEGE &nbsp; </span> </h2>
+        </div>
+
+        <div class="col-md-6">
+            <p style="text-align :justify;"> <b>
+                    College is the best place to grow, but to introduce industry standards, Gyanarpan is taking the
+                    initiative to open a development lab in the college campus. Students can have hands-on experience
+                    with real-world projects going in the industry.
+                </b> </p>
+            <a [routerLink]="['/enq']"> <button class="btn btn-txt "> Enquire Now </button> </a>
+            <div *ngIf="!scrEEn"> <br><br><br><br><br><br><br><br> </div>
+
+        </div>
+
+        <div class="col-md-6"> <br><br>
+            <div class="card bg-white shadow border-0">
+                <img alt="icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fdev-lab0.jpg?alt=media&token=2a9d393e-2cbe-4185-a07f-9e0535be07d6"
+                    style="border-radius: 20px" width="100%">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <br><br>
+</div>
+<!--  -->
+
+<!--  -->
+<div *ngIf="scrEEn" class="container">
+    <div class="row row-grid align-items-center">
+        <div class="col-md-12 row" style="padding: 0px;margin: 0px;">
+            <h2 class="txtHeader mr-auto ml-auto text-center" style="padding: 0px;margin: 0px;"> <span
+                    class="border-bottom"> &nbsp; DEVELOPMENT LAB IN COLLEGE &nbsp; </span> </h2>
+
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-white shadow border-0">
+                <img alt="icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fdev-lab0.jpg?alt=media&token=2a9d393e-2cbe-4185-a07f-9e0535be07d6"
+                    style="border-radius: 20px" width="100%">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <p style="text-align :justify;"> <b>
+                    College is the best place to grow, but to bring industry standard, Gyanarpan is taking an initiative
+                    to open a development lab in college campus. Students can have hands-on on real-world projects going
+                    on in industry.
+                </b> </p>
+            <a [routerLink]="['/enq']"> <button class="btn btn-txt "> Enquire Now </button> </a>
+
+        </div>
+    </div>
+    <br>
+
+    <br><br>
+</div>
+<!--  -->
+
+<app-footer></app-footer>

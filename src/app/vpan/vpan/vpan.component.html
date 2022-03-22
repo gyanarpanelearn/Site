@@ -1,0 +1,242 @@
+<nav id="navbar-main" class="navbar navbar-horizontal containerz navbar-main navbar-expand-lg sticky-top navbar-light  " style="background-color: white;margin: 0;padding: 0;" >
+  <!-- <div class="container" style="margin-left: 65px;font-size: smaller;"> -->
+  
+    <a [routerLink]="['/student-dash']" >
+        <img class="" alt="logo" style="margin-left: 70px;" src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782" width="auto" height="65px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global"  aria-label="Extend" >
+          <i class="ni ni-ui-04"></i>
+    </button>
+
+    <div class="navbar-collapse collapse" style="margin-right: 0px;" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a [routerLink]="['/student-dash']">
+              <img alt="logo" src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler"  (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global"  aria-label="Collapse">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto" >
+        <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="onClickN('stats')" data-toggle="tooltip" title="  ">
+            <!-- <i class="fa fa-home"></i>  -->
+            <b style="font-size: small;"> HOME</b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li>
+
+        <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="onClickN('scholarship')"   data-toggle="tooltip" title="  ">
+            <!-- <i class="fa fa-home"></i>  -->
+            <b style="font-size: small;"> SCHOLARSHIP </b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li>
+
+        <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="onClickN('internship')"   data-toggle="tooltip" title="  ">
+            <!-- <i class="fa fa-home"></i>  -->
+            <b style="font-size: small;"> INTERNSHIP </b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li>
+
+        <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="onClickN('programs')"  data-toggle="tooltip" title="  ">
+            <!-- <i class="fa fa-home"></i>  -->
+            <b style="font-size: small;"> OUR PROGRAMS </b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li>
+
+        <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="onClickN('stats')"  data-toggle="tooltip" title="  ">
+            <!-- <i class="fa fa-home"></i>  -->
+            <b style="font-size: small;"> IMPORTANT DATES </b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li> 
+
+        <!-- <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="onClickN('exams')" data-toggle="tooltip" title="  ">
+            <b  style="font-size: small;"> EXAMS </b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li> -->
+
+        <li class="nav-item" style="padding-right: 3px;">
+          <a class="nav-link nav-link-icon" (click)="logoutUser()" data-toggle="tooltip" title="  ">
+            <!-- <i class="fa fa-home"></i>  -->
+            <b  style="font-size: small;"> LOGOUT </b>
+            <span class="nav-link-inner--text d-lg-none"> </span>
+          </a>
+        </li>
+
+        
+        <ul *ngIf="" class="navbar-nav navbar-nav-hover align-items-lg-center" style="margin-right: 140px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+               <i class="ni ni-single-02"></i>
+               <!-- <b style="font-size: small;">CAREER</b>   -->
+            </a>
+            <div class="dropdown-menu">
+              <a [routerLink]="['/']" class="dropdown-item"> PROFILE </a>
+              <p (click)="logoutUser()">Logout</p>
+              <!-- <a [routerLink]="['/']" class="dropdown-item"> LOGOUT </a> -->
+              <!-- <a [routerLink]="['/']" class="dropdown-item">SKILLED GRADUATES RESUME</a> -->
+             </div>
+          </li>
+        </ul>
+
+      </ul>
+    </div>
+  <!-- </div> -->
+</nav>  
+
+
+<main>
+    <br><br>
+  <div class="container">
+    <div class="col-md-12 text-left"> <h1 class="txtHeader border-bottom"> TOPIC NAME </h1> 
+      <p> Duration : 10:20 Mins </p>
+    </div>
+    <br>
+  <div class=" col-md-12 row"> 
+    <div class="col-md-7">
+    <div style="padding:0% 0 0 0;position:relative;">
+      
+      <vg-player>
+        <vg-overlay-play></vg-overlay-play>
+        <vg-buffering></vg-buffering>
+    
+        <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+        </vg-scrub-bar>
+    
+        <vg-controls>
+            <vg-play-pause></vg-play-pause>
+            <vg-playback-button></vg-playback-button>
+    
+            <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+    
+            <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+    
+            <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+            <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+    
+            <vg-track-selector></vg-track-selector>
+            <vg-mute></vg-mute>
+            <vg-volume></vg-volume>
+    
+            <vg-fullscreen></vg-fullscreen>
+        </vg-controls>
+    
+        <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+            <source src="https://www.youtube.com/watch?v=eVVaqFDG6Fo" type="video/mp4">
+        </video>
+    </vg-player>
+      
+    </div>
+
+    <div class="col-md-12" style="margin-bottom: 10px;"> <br> <h4> Introduction to JAVA </h4> </div>
+    <div class="col-md-12 row" style="margin-bottom: 10px;">
+      <div class="col-md-8 row">
+        <div class="col-md-7">
+          1009 Views
+        </div>
+        <div class="col-md-5">
+          1 Aug 2019
+        </div>
+      </div>
+      <div class="col-md-2">
+        <i class="ni ni-like-2"></i> 55
+      </div>
+      <div class="col-md-2">
+        <i class="fa fa-thumbs-down" aria-hidden="true"></i> 12
+      </div>
+    </div>
+      <div class="col-md-12 row" style="margin-bottom: 10px;">
+        <div class="col-md-12 row">
+          <div class="col-md-4">
+            <img src="../../assets/img/brand/creativetim-white-slim.png" width="250px" >
+          </div>
+          <div class="col-md-8"> <br>
+            <b> Description : </b>
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-12">
+          dszfffffffffff ffffffff efffffff ffffffffff efffffffffff ffffffffr ed  dszffffffffff fffffff ff effffff fffffffffff efffffff fffff fffffffr ed  dszfffffffffffffffff ff efffffffffffffffff efffffffffffffffffffr ed  dszfffffffffffffffffff efffffffffffffffff efffffffffffffffffffr ed
+      </div>
+      <br><br>
+    <div class="col-md-12 row" style="margin-bottom: 10px;">
+
+      <fb-comments data-href="http://abc.co" data-width="92%"></fb-comments>
+      
+    </div>
+    
+    </div>
+
+    <div class="col-md-5">
+
+      <div class="alert alert-default alert-dismissible fade show" role="alert">
+        <span class="alert-inner--icon"><i class="ni ni-app"></i></span>
+        <span class="alert-inner--text"> Introduction to JAVA </span>
+      </div>
+
+      <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <span class="alert-inner--icon"><i class="ni ni-button-play"></i></span>
+        <span class="alert-inner--text"> History of JAVA </span>
+        <button type="button" class="close btn btn-primary" style="padding:10px;" data-dismiss="alert" aria-label="Close">
+          5 mins
+        </button>
+      </div>
+
+      <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <span class="alert-inner--icon"><i class="ni ni-button-play"></i></span>
+        <span class="alert-inner--text"> Why JAVA </span>
+        <button type="button" class="close btn btn-primary" style="padding:10px;" data-dismiss="alert" aria-label="Close">
+          4:10 mins
+        </button>
+      </div>
+
+      <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <span class="alert-inner--icon"><i class="ni ni-button-play"></i></span>
+        <span class="alert-inner--text"> Why JAVA is so important </span>
+        <button type="button" class="close btn btn-primary" style="padding:10px;" data-dismiss="alert" aria-label="Close">
+          5:50 mins
+        </button>
+      </div>
+
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <span class="alert-inner--icon"><i class="ni ni-button-play"></i></span>
+        <span class="alert-inner--text"> Assignment </span>
+      </div>
+
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <span class="alert-inner--icon"><i class="ni ni-button-play"></i></span>
+        <span class="alert-inner--text"> Assignment </span>
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+  <br><br><br><br>
+</main>
+
+
+<app-footer></app-footer>

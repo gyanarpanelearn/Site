@@ -1,0 +1,113 @@
+
+<app-navbar></app-navbar>
+
+<!-- style="background-image: url('../../assets/img/log-back.jpg');background-size: cover;" -->
+
+<div class="header py-7 py-lg-8" >
+  <div class="container">
+    <div class="header-body text-center mb-7">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  
+<div class="container mt--8 pb-5 " >
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-7" > 
+      <div class="card bg-secondary shadow border btn-secondary">
+        <div class="card-header bg-transparent pb-5">
+          <div class="text-muted text-center mt-2 mb-3"><small>Sign in with</small></div>
+          <div class="btn-wrapper text-center">
+            <a *ngIf="show" href="javascript:void(0)" class="btn btn-neutral btn-icon">
+              <span class="btn-inner--icon"><img alt="insta" src="https://www.freelogovectors.net/wp-content/uploads/2016/12/Instagram_Icon.png"></span>
+              <span class="btn-inner--text">Insta</span>
+            </a>
+            <a *ngIf="show" href="javascript:void(0)" class="btn btn-neutral btn-icon">
+              <span class="btn-inner--icon"><img  alt="fb" src="https://www.freelogovectors.net/wp-content/uploads/2016/12/facebook-logo.png"></span>
+              <span class="btn-inner--text">Facebook</span>
+            </a>
+            <a (click)="googleLogin()" class="btn btn-neutral btn-icon">
+              <span class="btn-inner--icon"><img  alt="google" src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/icons%2Fcommon%2Fgoogle.svg?alt=media&token=8a897cfe-3d3d-4062-93ab-9f6a91b13a6a"></span>
+              <span  class="btn-inner--text">Google</span>
+            </a>
+          </div>
+        </div>
+        <div class="card-body px-lg-5 py-lg-5" style="padding-top: 0%;margin-top: 0%;">
+          <div class="text-center text-muted mb-4" style="padding: 0%;margin: 0%;">
+            <small>Or sign in with credentials</small><br>
+            <a [routerLink]="['/auth/register']"> <u>Dont have account Sign Up</u> </a>
+          </div>
+          <!-- <form role="form"> -->
+            <div class="form-group mb-3">
+              <div class="input-group input-grou">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                </div>
+                <input class="form-control"   [(ngModel)]="emailInput" id="email" placeholder="Email" type="email">
+              </div>
+            </div>
+            <div class="form-group" *ngIf="!isForgotPassword">
+              <div class="input-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                </div>
+                <input type="password" class="form-control" [(ngModel)]="passwordInput" id="password" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-group" *ngIf="!isForgotPassword">
+                <div class="custom-control custom-checkbox ">
+                  <input class="custom-control-input" id="customCheck1" type="checkbox">
+                  <label class="custom-control-label" for="customCheck1"> KEEP ME SIGN IN </label>
+                </div> <br>
+
+                <!-- <a [routerLink]="['/student-dash']"> -->
+                   <button  aria-label="Login" type="button" class="btn btn-primary" (click)="loginUser()"> Sign
+                  In</button> 
+                <!-- </a> -->
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              <a href="javascript:void(0)" (click)="this.isForgotPassword= true;">Forgot
+                Password?</a>
+     
+            </div>
+
+            <!-- <a [routerLink]="['/register']" class="pull-right">
+              Sign Up 
+             </a> -->
+
+            <div class="form-group" *ngIf="isForgotPassword">
+                 
+              <button aria-label="cancel" type="button" class="btn" (click)="this.isForgotPassword=
+                false;">Cancel</button >
+              <button  aria-label="Reset password" type="button" class="btn btn-primary"
+                (click)="forgotPassword()">Get email to reset passowrd</button>
+            </div>
+ 
+
+          <div class="alert alert-{{responseMessageType}}" role="alert"
+          *ngIf="responseMessage.length">
+          {{responseMessage}}
+        </div>
+
+        </div>
+      </div>
+      <div class="row mt-3">
+        
+        <div class="col-6 text-right">
+          <!-- <a href="javascript:void(0)" class="text-light"><small>Create new account</small></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<app-footer></app-footer>
+<!--  -->

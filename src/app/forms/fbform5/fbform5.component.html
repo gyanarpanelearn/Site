@@ -1,0 +1,88 @@
+
+<app-navbar></app-navbar>
+ 
+
+
+<!--  -->
+
+
+<div class="header py-7 py-lg-8" >
+  <div class="container">
+    <div class="header-body text-center mb-7">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  
+<div class="container mt--8 pb-5 " >
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-7" > 
+      <div class="card bg-secondary shadow border btn-secondary">
+        <div class="card-header bg-transparent pb-5">
+          <div class="text-muted text-center mt-2 mb-3">
+            <h2 class="txtHeader" style="font-weight: bold;">
+              Join as Co-ordinator :
+            </h2>
+          </div> 
+        </div>
+        <div class="card-body px-lg-5 py-lg-5">
+           
+          
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="fname" placeholder="First Name" type="text" style="border-right: 1px solid grey;">
+
+              <div class="input-group-prepend">
+                  <span class="input-group-text"><i class=""></i></span>
+                </div>
+                <input class="form-control" [(ngModel)]="lname" placeholder="Last Name" type="text">
+
+            </div>
+
+          </div>
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="email" placeholder="Email" type="email">
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="phone" placeholder="Phone No." type="number">
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-building"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="city" placeholder="College Name" type="text">
+            </div>
+          </div>
+
+          <button (click)="this.pushFeedBack()" type="button" class="btn  btn-txt my-4 pull-right" style="border-radius: 16px"> Send Request </button>           
+
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!--  -->
+<app-footer></app-footer>

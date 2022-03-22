@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+.txt {
+  color: #126f9a;
+}
+.txt3 {
+  color: #126f9a;
+}
+.txt3 :hover {
+  color: white;
+  background-color: #126f9a;
+}
+.txt2 {
+  background-color: #126f9a;
+}
+.btn-txt {
+  background-color: #126f9a;
+  border-radius: 16px;
+  color: #fff;
+}
+
+// .txtf{
+//     font-size: 40px;
+//     background: -webkit-linear-gradient( to right, #ff0066 0%, #ffcccc 100% );
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+.txtb {
+  background-color: #126f9a;
+  border-radius: 50%;
+  color: #fff;
+}
+.txtHeader {
+  font-size: 28px;
+  color: #126f9a;
+  font-weight: normal;
+  // font-style: italic;
+  // font-family: 'proxima-nova', sans-serif;
+  font-family: "Patua one", cursive;
+  letter-spacing: 1px;
+}
+
+.txtSub {
+  // font-family: Arial Black, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #126f9a;
+  font-weight: 200;
+  font-family: "Palanquin", sans-serif;
+}
+.ntxt {
+  // font-family: 'Istok Web', sans-serif;
+  // line-height: 1.1 !important;
+  // font-size: 16px;
+  width: auto;
+}
+.txtH {
+  font-family: "Palanquin", sans-serif;
+  font-size: 18px;
+  // font-style: italic;
+}
+.txt1 {
+  font-size: 14px;
+  // color: #126f9a;
+}
+// .btn-txt{
+//     background-color: #126f9a;
+//     border-radius: 50%;
+// }
+.ctr {
+  width: auto;
+  border-radius: 20%;
+  text-align: center;
+  background: white;
+}
+.padd {
+  padding: 0px;
+}
+// .page-title:after {
+//     content: ""; /* This is necessary for the pseudo element to work. */
+//     display: block; /* This will put the pseudo element on its own line. */
+//     margin: 0 auto; /* This will center the border. */
+//     width: 30%; /* Change this to whatever width you want. */
+//     padding-top: 5px; /* This creates some space between the element and the border. */
+//     // margin-left: 0px;
+//     border-bottom: 2px solid #126f9a; /* This creates the border. Replace black with whatever color you want. */
+// }
+// .page-title-left:after {
+//     content: ""; /* This is necessary for the pseudo element to work. */
+//     display: block; /* This will put the pseudo element on its own line. */
+//     margin: 0 auto; /* This will center the border. */
+//     width: 30%; /* Change this to whatever width you want. */
+//     padding-top: 5px; /* This creates some space between the element and the border. */
+//     margin-left: 0px;
+//     border-bottom: 2px solid #126f9a; /* This creates the border. Replace black with whatever color you want. */
+// }
+// .page-title-full:after {
+//     content: ""; /* This is necessary for the pseudo element to work. */
+//     display: block; /* This will put the pseudo element on its own line. */
+//     margin: 0 auto; /* This will center the border. */
+//     width: 100%; /* Change this to whatever width you want. */
+//     padding-top: 5px; /* This creates some space between the element and the border. */
+//     margin-left: 0px;
+//     border-bottom: 2px solid #126f9a; /* This creates the border. Replace black with whatever color you want. */
+// }
+
+// blink button
+
+.button {
+  background-color: #004a7f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 2000ms infinite;
+  -moz-animation: glowing 2000ms infinite;
+  -o-animation: glowing 2000ms infinite;
+  animation: glowing 2000ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #126f9a;
+    -webkit-box-shadow: 0 0 3px #126f9a;
+  }
+  50% {
+    background-color: #126f9a;
+    -webkit-box-shadow: 0 0 20px #126f9a;
+  }
+  // 100% { background-color: #126f9a; -webkit-box-shadow: 0 0 3px #126f9a; }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: #126f9a;
+    -moz-box-shadow: 0 0 3px #126f9a;
+  }
+  50% {
+    background-color: #126f9a;
+    -moz-box-shadow: 0 0 20px #126f9a;
+  }
+  // 100% { background-color: #126f9a; -moz-box-shadow: 0 0 3px #126f9a; }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: #126f9a;
+    box-shadow: 0 0 3px #126f9a;
+  }
+  50% {
+    background-color: #126f9a;
+    box-shadow: 0 0 20px #126f9a;
+  }
+  // 100% { background-color: #126f9a; box-shadow: 0 0 3px #126f9a; }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #126f9a;
+    box-shadow: 0 0 3px #126f9a;
+  }
+  50% {
+    background-color: #126f9a;
+    box-shadow: 0 0 20px #126f9a;
+  }
+  // 100% { background-color: #126f9a; box-shadow: 0 0 3px #126f9a; }
+}
+
+//
+.sfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // background-color: rgb(248, 241, 241);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  height: 65px;
+}
+
+//
+
+.containerz {
+  margin-top: 50px;
+  /*THIS does not work as expected: */
+  box-shadow: 0 0 5px 5px rgb(187, 183, 183);
+}
+
+.img2 {
+  box-shadow: 5px 5px 25px 0 rgb(100, 126, 146);
+  border-radius: 0.375rem;
+  margin-bottom: 10px;
+}
+
+.blink_text {
+  animation: 2s blinker linear infinite;
+  -webkit-animation: 2s blinker linear infinite;
+  -moz-animation: 2s blinker linear infinite;
+
+  color: #fff;
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//
+ul {
+  padding-left: 2px;
+}
+li {
+  padding-left: 5px;
+}

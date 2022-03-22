@@ -1,0 +1,21 @@
+ 
+#servicesfindesc {
+  opacity: 0;
+  visibility: hidden;
+}
+#servicesfin:hover  #servicesfindesc {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.testimonial-group > .row {
+  overflow-x: scroll;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+
+}
+.testimonial-group > .row > .col-2 {
+  display: inline-block;
+  float: none;
+}

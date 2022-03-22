@@ -1,0 +1,243 @@
+<nav id="navbar-main" class="navbar containerz navbar-horizontal navbar-expand-lg sticky-top navbar-light bg-white "
+  style="padding: 0;margin: 0;">
+  <!-- <div class="container"  > -->
+
+  <a *ngIf="!scrEEn" [routerLink]="['/home']">
+    <img alt="logo" class="" style="margin-left: 70px;"
+      src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782"
+      width="auto" height="65px">
+  </a>
+  <a *ngIf="scrEEn" [routerLink]="['/home']">
+    <img alt="logo" class="" style="margin-left: 0px;"
+      src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782"
+      width="auto" height="65px">
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbar_global" aria-label="Extent">
+    <i class="ni ni-ui-04"></i>
+  </button>
+
+  <div class="navbar-collapse collapse pull-right" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div class="navbar-collapse-header">
+      <div class="row">
+        <div class="col-6 collapse-brand">
+          <a>
+            <img alt="logo"
+              src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/brand%2Fpravakti_logo.png?alt=media&token=2dfb3014-6163-40d7-8187-3384972e2782">
+          </a>
+        </div>
+        <div class="col-6 collapse-close">
+          <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global" aria-label="Collapse">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <ul class="navbar-nav align-items-lg-center ml-lg-auto ">
+      <li class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/home']" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home0"></i>  -->
+          <b style="font-size: small;">
+            <span *ngIf="!navHome"> HOME </span>
+            <span *ngIf="navHome" style="border-bottom: 3px solid #126f9a;"> HOME </span>
+          </b>
+
+        </a>
+      </li>
+
+
+
+      <ul *ngIf="!scrEEn" class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <!-- <i class="ni ni-app"></i> -->
+            <b style="font-size: small;">PROGRAMS</b>
+          </a>
+          <div class="dropdown-menu">
+            <a [routerLink]="['/preplacement/sales-force-development-training']" class="dropdown-item">PRE-PLACEMENT</a>
+            <a [routerLink]="['/salesforce-admin']" class="dropdown-item">SALESFORCE ADMIN</a>
+            <!-- <a [routerLink]="['/internship-for-computer-and-it-engineers']" class="dropdown-item">INTERNSHIP</a> -->
+            <!-- <a [routerLink]="['/preplacement-scholarship-exam-for-computer-it-and-electronics-engineers']"
+              class="dropdown-item">SCHOLARSHIP</a> -->
+          </div>
+        </li>
+      </ul>
+
+      <li *ngIf="scrEEn" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/preplacement/sales-force-development-training']">
+          <!-- <i class="fa fa-home0"></i>  -->
+          <b style="font-size: small;">
+            PRE-PLACEMENT
+          </b>
+        </a>
+        <a class="nav-link nav-link-icon" [routerLink]="['/salesforce-admin']">
+          <!-- <i class="fa fa-home0"></i>  -->
+          <b style="font-size: small;">
+            SALESFORCE ADMIN
+          </b>
+        </a>
+      </li>
+
+      <!-- <li *ngIf="scrEEn" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/internship-for-computer-and-it-engineers']">
+          <b style="font-size: small;">
+            INTERNSHIP
+          </b>
+        </a>
+      </li> -->
+
+      <!-- <li *ngIf="scrEEn" class="nav-item">
+        <a class="nav-link nav-link-icon"
+          [routerLink]="['/preplacement-scholarship-exam-for-computer-it-and-electronics-engineers']">
+          <b style="font-size: small;">
+            SCHOLARSHIP
+          </b>
+        </a>
+      </li> -->
+
+      <ul *ngIf="show" class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <b style="font-size: small;">OUR PEOPLE</b>
+          </a>
+          <div class="dropdown-menu">
+            <a [routerLink]="['/fb']" class="dropdown-item">GET HIRED</a>
+            <a [routerLink]="['/fb']" class="dropdown-item">HIRE FROM US</a>
+            <!-- <a [routerLink]="['/join-as-a-coordinator']" class="dropdown-item">OUR COORDINATORS</a> -->
+            <a [routerLink]="['/']" class="dropdown-item">DIGITAL AV RESUME</a>
+          </div>
+        </li>
+      </ul>
+
+
+      <li *ngIf="show" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/fb']">
+          <!-- <i class="fa fa-home0"></i>  -->
+          <b style="font-size: small;">
+            GET HIRED
+          </b>
+        </a>
+      </li>
+
+      <!-- <li *ngIf="show" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/fb']">
+          <b style="font-size: small;">
+            INTERNSHIP
+          </b>
+        </a>
+      </li> -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/join-as-a-coordinator']">
+          <b style="font-size: small;">
+            OUR COORDINATORS
+          </b>
+        </a>
+      </li> -->
+
+      <li *ngIf="show" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/']">
+          <!-- <i class="fa fa-home0"></i>  -->
+          <b style="font-size: small;">
+            DIGITAL AV RESUME
+          </b>
+        </a>
+      </li>
+
+
+
+
+      <li *ngIf="isTeamee" class="nav-item" (click)="isTeam()">
+        <a class="nav-link nav-link-icon" (click)="onClickN('team')" data-toggle="tooltip" title="  ">
+          <!-- <i class="ni ni-single-02"></i>  -->
+          <b style="font-size: small;">
+            <!-- <b style="font-size: small;">OUR TEAM</b> -->
+            <span *ngIf="!navTeam"> OUR TEAM </span>
+            <span *ngIf="navTeam" style="border-bottom: 3px solid #126f9a;"> OUR TEAM </span>
+          </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li *ngIf="!isTeamee" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/abot-us']" fragment="team" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-phone"></i>  -->
+          <!-- <b style="font-size: small;">ABOUT US</b> -->
+          <b style="font-size: small;">
+            <span> OUR TEAM </span>
+            <!-- <span *ngIf="navAbou" style="border-bottom: 3px solid #126f9a;"  > CONTACT US </span> -->
+          </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li *ngIf="show" class="nav-item" (click)="isCont()">
+        <a class="nav-link nav-link-icon" (click)="onClickN('contact')" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-phone"></i>  -->
+          <b style="font-size: small;">
+            <!-- <b style="font-size: small;">CONTACT US</b> -->
+            <span *ngIf="!navCont"> CONTACT US </span>
+            <span *ngIf="navCont" style="border-bottom: 3px solid #126f9a;"> CONTACT US </span>
+          </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/contact-us']" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-phone"></i>  -->
+          <!-- <b style="font-size: small;">ABOUT US</b> -->
+          <b style="font-size: small;">
+            <span> CONTACT US </span>
+            <!-- <span *ngIf="navAbou" style="border-bottom: 3px solid #126f9a;"  > CONTACT US </span> -->
+          </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/about-us']" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-phone"></i>  -->
+          <!-- <b style="font-size: small;">ABOUT US</b> -->
+          <b style="font-size: small;">
+            <span> ABOUT US </span>
+            <!-- <span *ngIf="navAbou" style="border-bottom: 3px solid #126f9a;"  > ABOUT US </span> -->
+          </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li *ngIf="!logged" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/auth/login']" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-phone"></i>  -->
+          <b style="font-size: small;"> LOGIN </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li *ngIf="!logged" class="nav-item">
+        <a class="nav-link nav-link-icon" [routerLink]="['/auth/register']" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-phone"></i>  -->
+          <b style="font-size: small;"> <button class="btn btn-txt btn-sm"> SIGN UP </button> </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+      <li *ngIf="logged" class="nav-item" style="padding-right: 3px;">
+        <a class="nav-link nav-link-icon" (click)="logoutUser()" data-toggle="tooltip" title="  ">
+          <!-- <i class="fa fa-home"></i>  -->
+          <b style="font-size: small;"> LOGOUT </b>
+          <span class="nav-link-inner--text d-lg-none"> </span>
+        </a>
+      </li>
+
+
+    </ul>
+  </div>
+  <!-- </div> -->
+</nav>

@@ -1,0 +1,137 @@
+
+<app-navbar></app-navbar>
+ 
+
+
+<!--  -->
+
+
+<div class="header py-7 py-lg-8" >
+  <div class="container">
+    <div class="header-body text-center mb-7">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  
+<div class="container mt--8 pb-5 " >
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-7" > 
+      <div class="card bg-secondary shadow border btn-secondary">
+        <div class="card-header bg-transparent pb-5">
+          <div class="text-muted text-center mt-2 mb-3">
+            <h2 class="txtHeader" style="font-weight: bold;">
+              Start your career with us:
+            </h2>
+          </div> 
+        </div>
+        <div class="card-body px-lg-5 py-lg-5">
+           
+          
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="fname" placeholder="First Name" type="text" style="border-right: 1px solid grey;">
+
+              <div class="input-group-prepend">
+                  <span class="input-group-text"><i class=""></i></span>
+                </div>
+                <input class="form-control" [(ngModel)]="lname" placeholder="Last Name" type="text">
+
+            </div>
+
+          </div>
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="email" placeholder="Email" type="email">
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="phone" placeholder="Phone No." type="number">
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="dob" placeholder="DOB" type="date">
+            </div>
+          </div>
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-building"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="city" placeholder="City" type="text">
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="qualification" placeholder="Qualification"  type="text">
+            </div>
+          </div>
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-badge"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="currentJob"  placeholder="Current Job" type="text">
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="ni ni-books"></i></span>
+              </div>
+              <input class="form-control" [(ngModel)]="courseToTeach" placeholder="Course name" type="text">
+            </div>
+          </div>
+
+
+ 
+              <!-- TODO purpose text area... data binding not working -->
+              <div   class="form-group label-floating"><label  
+                class="control-label">Purpose</label><textarea [(ngModel)]="msg"  class="form-control"
+                id="message" name="message" placeholder="Purpose" rows="3"></textarea></div>
+          <!-- <form>
+            <textarea class="form-control form-control-alternative" name="message" [(ngModel)]="Obj.message" rows="3"></textarea>
+          </form> -->
+
+           <br><br>
+           <!-- <button [routerLink]="['../register']" type="button" class="btn btn-txt my-4 pull-left" style="border-radius: 16px"> Reset </button> -->
+           <!-- <button [routerLink]="['../paymentResult']" type="button" class="btn  btn-txt my-4 pull-right" style="border-radius: 16px"> Send Feedback </button> -->
+           <!-- TODO why this is going to payment Result -->
+           <button (click)="this.pushFeedBack()" type="button" class="btn  btn-txt my-4 pull-right" style="border-radius: 16px"> Send Feedback </button>
+            
+
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!--  -->
+<app-footer></app-footer>

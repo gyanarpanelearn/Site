@@ -1,0 +1,426 @@
+<app-navbar></app-navbar>
+
+
+<nav *ngIf="show" id="stats" class="navbar navbar-horizontal bg-white" >
+    <div class="row col-lg-12"  >
+       <div class="col-md-1"></div>
+
+     <div class="col-md-5">
+        <br><br><br>
+        <h3><b> INTERNET OF THINGS(IOT) PRE-PLACEMENT PROGRAM </b></h3>
+        <br><br>
+        <h3><b> 100% JOB GURANTEED </b></h3>
+
+        <button (click)="onClickN('feess')" class="btn btn-lg btn-txt"> ENROLL NOW </button> &nbsp;&nbsp;&nbsp;
+        <button (click)="onClickN('team')"  class="btn btn-lg btn-txt"> TAKE A TEST </button>
+     </div>
+
+
+     <div class="col-md-6 "  >
+
+         
+        <br>
+          <div style="position:relative;">
+      <img  alt="icon" src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrr%2FFormatFactoryinternship-landing-page.jpg?alt=media&token=0eb13365-9180-4073-929a-8155484a4892" width="100%">
+          </div>
+        </div>
+     
+   </div>
+</nav>
+
+<!--  -->
+
+<div class="position-relative">
+  <div class="demo-header demo-header-image">
+
+      <div class="motto row col-md-12  text-center" >
+<div *ngIf="!scrEEn" style="margin-top: 225px;margin-left: 70px;">
+    <button class="btn btn-txt shadow"  (click)="onClickN('feess')" style="font-weight: bold;"> ENROLL NOW </button> 
+    <button class="btn btn-secondary shadow" (click)="onClickN('take-test')" style="color: #126f9a;font-weight: bold;" > TAKE A TEST </button>
+    <br><br><br><br>
+</div>
+<div *ngIf="scrEEn" style="margin-top: 0px;margin-left: 70px;">
+    <button class="btn btn-txt btn-sm shadow"  (click)="onClickN('feess')" style="font-weight: bold;"> ENROLL NOW </button> 
+    <button class="btn btn-secondary btn-sm shadow" (click)="onClickN('take-test')" style="color: #126f9a;font-weight: bold;border: 1px solid #126f9a;" > TAKE A TEST </button>
+</div>
+    </div>    
+    </div>
+  </div>
+
+
+<!--  -->
+
+<div>
+  <div class="row justify-content-center text-center mb-lg" style="padding: 0px;margin: 0px;">
+    <div class="col-lg-12">
+        <br><br><br>
+      <h2 class="txtHeader text-center mr-auto ml-auto"  > <span class="border-bottom"> &nbsp; DESCRIPTION &nbsp;</span> </h2><br>
+      <p style="text-align: center;"><b>
+        This course is mainly designed for students and freshers. You will get complete knowledge starting from the basics. If you are learning this course for the first time and you are new to coding, then this is the best course for you. Our ability to deliver outstanding results for our students starts with our team of experienced and capable industry experts. We share a mutual passion for technology and believe in doing excellent work for our students to build their careers.
+      </b></p>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-horizontal " style="padding: 1%;" >
+
+    <div class="row col-md-12 text-center">
+      <div class="col-md-1"></div>
+    <div class="col-md-3 " style="margin-bottom: 30px;">
+        <h2 style="font-size: 16px;">DURATION </h2>
+        <p  style="font-weight: bold;text-decoration: underline;" > 8 Months </p>
+        <p>450+ hours of content 3 hrs daily</p>
+     </div> 
+    <div class="col-md-3 " style="border-left: 2px solid grey; margin-bottom: 30px;">
+        <h2 style="font-size: 16px;"> ENROLL BY </h2>
+        <p style="font-weight: bold;text-decoration: underline;" > 28<sup>th</sup> February, 2021</p>
+        <p>Get access to course immediately</p>
+     </div>
+    <div class="col-md-4  " style="border-left: 2px solid grey; margin-bottom: 30px;">
+        <h2 style="font-size: 16px;"> PREREQUISITES </h2>
+        <p style="font-weight: bold;" > Student from any branch with at least 60% aggregate in 10th and 12th can enrol for this program.  </p>
+        <p></p>
+      </div>
+     </div>
+</nav>
+
+ 
+<br><br><br>
+
+<!-- benefits -->
+<div class="container" >
+  <div class="row row-grid align-items-center">
+      <div class="col-md-12 row">
+          <h2 class="txtHeader mr-auto ml-auto text-center">  <span class="border-bottom"> &nbsp; PROGRAM OVERVIEW &nbsp; </span> </h2>
+          <br><br><br>
+      </div>
+
+
+      <div *ngIf="scrEEn" class="col-md-6">
+        <br> 
+        <ul style="padding-left: 0;list-style-type: none;">
+            <li>  <p>    
+            <b> 
+                <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1115/premium/1115732.png" height="25px">  Design for freshers and college students  
+            </b>
+            </p>
+            </li>
+
+            <li>  <p>   
+            <b> 
+                <img alt="icon"  src="https://image.flaticon.com/icons/png/512/1283/1283218.png" height="25px">   100% job guaranteed  
+            </b>
+            </p>
+            </li> 
+
+            <li>  <p>   
+            <b> 
+                <img alt="icon"  src="https://image.flaticon.com/icons/png/512/833/833634.png" height="25px"> 450+ hours of learning  
+            </b>
+            </p>
+            </li>
+
+            <li>  <p>   
+            <b> 
+                <img alt="icon"  src="https://image.flaticon.com/icons/png/512/2303/2303891.png" height="25px">   Assignments on each topic 
+            </b>
+            </p>
+            </li>       
+            <li>  <p>   
+            <b> 
+                <img alt="icon"  src="https://image.flaticon.com/icons/png/512/1087/1087815.png" height="25px">   3+ hands on capstone project   
+            </b>
+            </p>
+            </li>                     
+
+            <li>  <p>  
+              <b> 
+                  <img  alt="icon"  alt="icon" src="https://image.flaticon.com/icons/png/512/1999/1999072.png" height="25px">   1-on-1 with Industry Mentors
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img alt="icon"  src="https://image.flaticon.com/icons/png/512/1454/1454500.png" height="25px">  Career guidance  
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1402/1402153.png" height="25px">   Aptitude Training 
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/2037/2037544.png" height="25px">   Moneyback guaranteed. <a [routerLink]="['/terms']"> (Terms & Conditions) </a>
+              </b>
+              </p>
+              </li>
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/942/942748.png" height="25px">   Interview Training
+              </b>
+              </p>
+              </li>  
+          </ul>
+          <br> 
+    </div>
+
+      <div *ngIf="!scrEEn" class="col-md-6">
+          <br> 
+          <ul style="padding-left: 0;list-style-type: none;">
+              <li>  <p>    
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1115/premium/1115732.png" height="25px">  Design for freshers and college students  
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1283/1283218.png" height="25px">   100% job guaranteed  
+              </b>
+              </p>
+              </li>
+
+              <!-- <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1402/1402153.png" height="25px"> 5+ MOCK INTERVIEW 
+              </b>
+              </p>
+              </li> -->
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/833/833634.png" height="25px"> 450+ hours of learning  
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/2303/2303891.png" height="25px">   Assignments on each topic  
+              </b>
+              </p>
+              </li>       
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1087/1087815.png" height="25px">   3+hands on capstone project   
+              </b>
+              </p>
+              </li>                     
+            </ul>
+            <br> 
+      </div>
+
+      <div *ngIf="!scrEEn" class="col-md-6">
+          <br>
+          <ul style="padding-left: 0;list-style-type: none;">
+        
+
+              <li>  <p>  
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1999/1999072.png" height="25px">   1-on-1 with Industry Mentors
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1454/1454500.png" height="25px">  Career guidance  
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/1402/1402153.png" height="25px">   Aptitude Training 
+              </b>
+              </p>
+              </li>
+
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/2037/2037544.png" height="25px">   Moneyback guaranteed. <a [routerLink]="['/terms']"> (Terms & Conditions) </a>
+              </b>
+              </p>
+              </li>
+              <li>  <p>   
+              <b> 
+                  <img  alt="icon" src="https://image.flaticon.com/icons/png/512/942/942748.png" height="25px">   Interview Training
+              </b>
+              </p>
+              </li>  
+            </ul>
+            <br> 
+      </div>
+
+  </div>
+  <br>
+</div>
+<!--  -->
+
+<div class="col-md-12 row">
+  <div class="col-md-12">
+    <h2 class="txtHeader text-center mr-auto ml-auto"  > <span class="border-bottom"> &nbsp; PROGRAMMING LANGUAGES AND TOOLS COVERED &nbsp;</span> </h2><br>
+  </div>
+
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10 col-md-12 col-sm-12 text-center">
+    <img  alt="icon" src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo_icon.png" height="50px" style="margin: 8px;margin-right: 70px;margin-left: 20px;">
+    <img  alt="icon" src="https://www.fullstackpython.com/img/logos/html.jpg" height="30px" style="margin: 8px;margin-right: 70px;">
+    <img  alt="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_r8Hnbq-bYwbFKpaxelAimIo7akWgRyStZ9FcyDXHr_Y2auQYw&s" height="60px" style="margin: 8px;margin-right: 70px;">
+    <img  alt="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1280px-Spring_Framework_Logo_2018.svg.png" height="30px" style="margin: 8px;margin-right: 70px;">
+    <img  alt="icon" src="https://3.bp.blogspot.com/-wItXFvdSkhg/W-R7tHoNJqI/AAAAAAAATY8/ijYaGespjlM-BuS5jfpAi_Lvxy53QwQlQCLcBGAs/s1600/Spring-Boot-logo.png" height="60px" style="margin: 8px;margin-right: 70px;">
+    <img  alt="icon" src="https://git-scm.com/images/logos/2color-lightbg@2x.png" height="40px" style="margin: 8px;">
+    
+  </div>
+  <br><br><br>
+</div>
+
+
+<nav *ngIf="show" id="syllabus" class="navbar navbar-horizontal bg-white" style="padding: 3%;" >
+    <div class="col-md-12">
+      <h2 class="txtHeader text-center"> COURSE CONTENT </h2> <br><br><br><br>
+    </div>
+    <div class="container ">
+      
+      <h1 class="txtHeader">
+        Coming Soon
+      </h1>   
+       </div>
+  </nav>
+
+  <div class="col-md-12 text-center mr-auto ml-auto">
+    <h2 class="txtHeader"> Coming Soon... </h2>
+  </div>
+
+<div class="col-lg-12 row text-center" id="take-test" style=" background-image: url('https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/dsrn%2Fbg-about.jpg?alt=media&token=a2fe3efa-88f4-4eef-ad6f-da9e81ba7b5b');background-size: cover;">
+    
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8"> 
+        <br><br><br>
+    <p style="text-align: center;color: #ffffff;"><b>
+      This test helps us to assess your level of knowledge and understanding of the subject. As per your performance in the test, we assign a mentor who will assist you in every possible way to master the course and achieve your goals.   
+      <br><br>
+    </b></p>
+  </div>
+  <div class="col-lg-2"></div>
+  
+  <button class="btn btn-secondary text-center mr-auto ml-auto" style="color: #126f9a;"> START THE TEST NOW </button>
+  <div class="col-lg-12"><br><br></div>
+</div>
+
+
+<nav id="feess" class="navbar navbar-horizontal " style="background-color: #ffffff"> 
+  
+    <div class="container" >
+        <div class="container row col-md-12" >
+
+          <div class="col-md-12 text-center">
+              <br><br>
+              <h2   class="title txtf txtHeader"> PROGRAM FEES  </h2>
+              <br><br>
+          </div>
+          <div class="col-sm-3"></div>
+
+          <div class="col-md-5 bg-secondary" style="height: 380px; margin-top: 10px;border-radius: 10px;padding: 5%;border-bottom: 3px solid #126f9a; box-shadow: 5px 5px 25px 0 rgb(100, 126, 146);">
+            <div class="txtSub" style="padding: 5%;">
+               FULL PAYMENT
+             </div>
+
+             <div class="txtHeader" style="padding: 5%;color: #126f9a;">
+                 FEES : ₹25000/-
+                 <span style="font-size: 13px;font-weight: bold;padding-bottom: 50px;letter-spacing: 0cm;">one time</span>
+               </div>
+
+             <!-- <p style="margin:15px;">Learn how to build high quality websites and dynamic applications for the web.
+               </p> <br> -->
+
+               <!-- <app-pay-modal></app-pay-modal> -->
+               <a [routerLink]="['/enroll-now']"><button class="btn btn-txt" style="width: 100%;">ENROLL NOW</button></a>
+             <!-- <button class="btn btn-txt" style="width: 100%;">ENROLL NOW</button> -->
+
+          </div>
+
+          <div class="col-sm-1"></div>
+
+         <div  *ngIf="show" class="col-md-5 bg-secondary" style="height: 380px; margin-top: 10px;border-radius: 10px;padding: 5%;border-bottom: 3px solid #126f9a; box-shadow: 5px 5px 25px 0 rgb(100, 126, 146);">
+            
+           <div class="txtSub" style="padding: 5%;">
+              NO COST EMI <button class="btn btn-txt btn-sm"> View Plans </button>
+            </div>
+
+            <div class="txtHeader" style="padding: 5%;color: #126f9a;">
+              FEES : ₹25000/-
+                <span style="font-size: 13px;font-weight: bold;padding-bottom: 50px;"> 
+                  
+                </span>
+              </div>
+
+            <!-- <p style="margin:15px;">Learn how to build high quality websites and dynamic applications for the web.
+              </p> <br> -->
+
+              <!-- <app-pay-modal></app-pay-modal> -->
+               <a [routerLink]="['/enroll-now']"><button class="btn btn-txt" style="width: 100%;">ENROLL NOW</button></a>
+            <!-- <button class="btn btn-txt" style="width: 100%;">ENROLL NOW</button> -->
+
+         </div>
+      </div>
+      <div class="container row col-md-12" >
+          <br><br><br>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="col-md-12 row">
+      <br><br><br><br>
+      <!-- <div class="row row-grid align-items-center"> -->
+          <!-- <div class="col-md-12 row">
+          </div> -->
+          <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-6">
+              <div class=" ">
+                  <br><br><br><br>
+               <img  alt="icon" class="img2" src="https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/changed%2F100-percent-jobgurr.webp?alt=media&token=2c118da1-4af0-4670-aa55-5b77783eed0a" width="100%;">            
+              </div>
+            </div>
+          <div class="col-md-5" >
+              <!-- <div class="pl-md-5"> -->
+                  <br><br><br><br>
+                  <h2 class="txtHeader mr-auto ml-auto text-left"><span class="border-bottom" style="margin-left: -5px;"> 100% Job Guarantee </span> <sup style="font-size: 28px;">*</sup>  </h2>
+
+                <p style="text-align: justify;"> <b> 
+                  Our industry-leading programs give students everything they need to Step Up and Succeed. It helps student in enhancing their technical and interpersonal skills and staying ahead of the crowd. We assure 100% placement within 6 months of the successful completion of the pre-placement program. Students get eligible for money-back guarantee if they don't get a job within 6 months of the course completion.  
+                </b></p>
+                <a [routerLink]="['/terms']" style="color: #126f9a;text-decoration: underline;"> Terms & Conditions </a>
+                
+              <!-- </div> -->
+            </div>
+        
+      <!-- </div> -->
+    
+    </div>
+  </div>
+
+
+  
+  <!-- <br><br> -->
+
+<!--   
+  <div class="col-md-12">
+    <h2 class="txtHeader mr-auto ml-auto text-center"><span class="border-bottom" style="margin-left: -5px;"> INTERNS REVIEWS </span> </h2>
+  </div>
+
+<app-message></app-message> -->
+
+<div class="col-md-12">
+<br><br><br><br>
+</div>
+
+<app-footer></app-footer>

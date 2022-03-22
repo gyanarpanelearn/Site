@@ -1,0 +1,97 @@
+<app-navbar></app-navbar>
+
+<br>
+  <!-- Table -->
+<div class="container">
+  <!-- <div class="col-md-2"></div> -->
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <h3 class="mb-0 text-center"> Gyanarpan Exams </h3>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Exam Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Questions</th>
+                <th scope="col">To.Marks</th>  
+                <th scope="col">Marks</th> 
+                <th scope="col">Negative</th> 
+                <th scope="col">Start Exam</th>  
+              </tr>
+            </thead>
+            <tbody> 
+
+              <tr *ngFor="let item of res">
+                <th scope="row">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <span class="mb-0 text-sm"> {{item.payload.doc.data().name}} </span>
+                    </div>
+                  </div>
+                </th>
+                <td>
+                  {{item.payload.doc.data().date}}
+                </td>
+                <td>
+                  {{item.payload.doc.data().ques}}
+                </td>
+                <td>
+                  {{item.payload.doc.data().tomarks}}
+                </td>  
+                <td>
+                  {{item.payload.doc.data().mark}}
+                </td>  
+                <td>
+                  {{item.payload.doc.data().neg}}
+                </td>
+                <td>
+                  <a href="/do-exam/{{item.payload.doc.data().name}}"><button class="btn btn-txt btn-sm"> {{item.payload.doc.data().name}} </button></a>
+                </td>   
+              </tr>
+
+              <!-- <tr>
+                <th scope="row">
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <span class="mb-0 text-sm">Scholarship</span>
+                    </div>
+                  </div>
+                </th>
+                <td>
+                  50
+                </td>
+                <td>
+                  100
+                </td>  
+                <td>
+                  -2 / Ans
+                </td>
+                <td>
+                  <button class="btn btn-txt btn-sm"> Scholarship </button>
+                </td>   
+              </tr> -->
+
+            </tbody>
+          </table>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <!-- <div class="col-md-12 text-center">
+  <a [routerLink]="['/student-dash']">
+    <button class="btn btn-txt text-center">
+      See Your Result
+    </button>
+  </a>
+</div> -->
+</div>
+  <!--  -->
+
+<app-footer></app-footer>

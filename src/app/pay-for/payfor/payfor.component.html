@@ -1,0 +1,76 @@
+<app-navbar></app-navbar>
+
+<div class="contactus-1 section-image"
+  style="background-image: url('https://firebasestorage.googleapis.com/v0/b/gyanarpanlearning-live.appspot.com/o/bg-pay.jpg?alt=media&token=b199840a-646a-4885-8668-7a25cbd0af6a');background-size: cover;">
+  <br><br>
+  <div class="">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 ml-auto mr-auto">
+        <div class="card card-contact no-transition" style="border-radius: 20px;"><br>
+          <h4 style="padding: 0%;" class=" text-center txt mr-auto ml-auto"> <b> &nbsp; PROGRAM DETAILS &nbsp;</b> </h4>
+          <hr style="margin: 0px;">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <div style="padding: 0%;" class="card-body">
+                <p class="text-center mr-auto ml-auto"> <b> {{showName}} </b> </p>
+                <hr style="margin: 0%;">
+
+                <div class="container">
+                  <div class="form-group label-floating"><label class="control-label"><b>Name :</b> </label>
+                    {{this.userDetails.displayName}}</div>
+
+                  <div class="form-group label-floating"><label class="control-label"><b>Email :</b> </label>
+                    {{this.userDetails.email}} </div>
+
+                  <div>
+                    <b>Subtotal :</b> {{this.Tfees/100}}/- <br>
+                    <b>Processing Fees & Tax :</b> {{this.gw/100}}/- <br>
+
+                    <!-- <br><br>
+                    <div class="container row" *ngIf="refCodeStat == null || refCodeStat == 'null'">
+                      <div class="form-group col" style="padding: 0%;margin: 0%;">
+                        <input type="text" [(ngModel)]="refCode" class="form-control" id="referral"
+                          placeholder="Referral Code">
+                      </div>
+                      <div class="form-group col" style="padding: 0%;margin: 0%;">
+                        <button class="btn btn-primary col" type="button" (click)="applyRefCode()">Apply Code</button>
+                      </div>
+                    </div> -->
+
+                    <div *ngIf="rem == 'yes'">
+                      <b>Course Total :</b> {{this.noR/100}}/- <br>
+                      <b>Paid :</b> {{this.onlyR/100}}/-
+                    </div>
+                    <hr>
+                    <b>Total :</b> {{this.fees/100}}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="margin: 0%;">
+            <form id="contact-form" method="post" novalidate="" role="form" class="ng-untouched ng-pristine ng-valid">
+              <div class="card-body text-center">
+
+                <hr style="margin: 0%;">
+                <div class="col-md-12 row text-center mr-auto ml-auto">
+                  <div class="form-group label-floating"><label class="control-label">By confirming, you agree to
+                      Gyanarpan's<a [routerLink]="['/terms']"> Terms of Use.</a></label> </div>
+
+                  <button [disabled]="!this.enablePayment" (click)="initPay()" class="btn txtb text-center"
+                    style="border-radius: 16px;" type="submit"> Confirm Subscription </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+
+
+<app-footer></app-footer>
